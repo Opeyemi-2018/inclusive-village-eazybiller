@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 
 const SectionFour = () => {
   const clients = [
-    "/images/edupay.jpg",
+    "/images/genesis-estate.jpg",
     "/images/edupay.jpg",
     "/images/edupay.jpg",
     "/images/edupay.jpg",
