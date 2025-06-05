@@ -139,17 +139,7 @@ body{
   animation: scaleIn 0.6s ease-out forwards;
 }
 
-/* Optional: Add delay classes for staggered animations */
-/* .scale-in-delay-1 {
-  animation-delay: 0.1s;
+html {
+  scroll-behavior: smooth;
 }
-.scale-in-delay-2 {
-  animation-delay: 0.2s;
-}
-.scale-in-delay-3 {
-  animation-delay: 0.3s;
-}
-.scale-in-delay-4 {
-  animation-delay: 0.4s;
-} */
 

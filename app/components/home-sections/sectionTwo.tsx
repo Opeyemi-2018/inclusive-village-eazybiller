@@ -13,6 +13,8 @@ const SectionTwo = () => {
     const isCounting = useRef(false);
 
     useEffect(() => {
+        const currentSection = sectionRef.current;  // copy ref.current here
+
         const observer = new IntersectionObserver(
             (entries) => {
                 const [entry] = entries;
@@ -27,16 +29,17 @@ const SectionTwo = () => {
             { threshold: 0.5 }
         );
 
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
+        if (currentSection) {
+            observer.observe(currentSection);
         }
 
         return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
+            if (currentSection) {
+                observer.unobserve(currentSection);
             }
         };
     }, []);
+
 
     const startCounting = () => {
         const startTime = Date.now();
@@ -64,7 +67,7 @@ const SectionTwo = () => {
                 {/* Slide in from left */}
                 <motion.div
                     ref={sectionRef}
-                  initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                     viewport={{ once: true, amount: 0.5 }}

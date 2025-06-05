@@ -4,6 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { motion } from 'framer-motion';
 
 import Image from "next/image";
+import Link from "next/link";
 const SectionFive = () => {
   return (
     <div className="relative bg-[#003630]">
@@ -52,9 +53,12 @@ const SectionFive = () => {
             <h1 className="text-white lg:text-3xl text-2xl font-bold mb-4">
               20<span className="text-[#64ec9d] ">+</span> <br /> Years of Experience.
             </h1>
+                                    <Link href="/pages/solution#contact" scroll={true}>
+            
             <button className="flex items-center mt-6 gap-3 bg-[#64ec9d] text-gray-800 p-4 text-[18px] font-semibold hover:bg-gray-800 hover:text-white transition">
               Schedule a free consultation <FiArrowUpRight />
             </button>
+            </Link>
           </div>
         </div>
 

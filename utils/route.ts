@@ -8,12 +8,17 @@ export const routes = [
   {
     id: 1,
     name: "Home",
-    path: "/home",
+    path: "/",
+  },
+  {
+    id: 5,
+    name: "About Us",
+    path: "/pages/about",
   },
   {
     id: 2,
     name: "Solution",
-    path: "/solution",
+    path: "/pages/solution",
   },
   {
     id: 3,
@@ -25,9 +30,5 @@ export const routes = [
     name: "Portfolio",
     path: "/portfolio",
   },
-  {
-    id: 5,
-    name: "Resources",
-    path: "/resources",
-  }
+
 ]

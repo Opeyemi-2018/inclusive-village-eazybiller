@@ -16,7 +16,7 @@ const SectionThree = () => {
             ],
             image: '/images/service-1.jpg',
             mask: '/images/ser-1.png',
-            bgColor: 'bg-[#E1EACD]' // First card keeps original color
+            bgColor: 'bg-[#E1EACD]' 
         },
         {
             title: " IT Infrastructure & Integration",

@@ -6,6 +6,8 @@ import { VscDebugDisconnect } from "react-icons/vsc";
 import { MdOutlineMail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { ReactTyped } from 'react-typed';
+import Link from "next/link";
+
 
 const heroImage = [
     { img: "/images/banner.jpg" },
@@ -66,9 +68,12 @@ const SectionOne = () => {
                                 loop
                             />
                         </div>
+                                                <Link href="/pages/solution#contact" scroll={true}>
+
                         <button className="flex items-center gap-3 bg-[#64ec9d] text-gray-800 p-4 text-[18px] font-semibold  hover:bg-gray-800 hover:text-white transition">
                             Schedule a free consultation <FiArrowUpRight />
                         </button>
+                        </Link>
                     </div>
                 </div>
 

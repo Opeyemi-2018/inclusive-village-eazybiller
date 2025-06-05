@@ -11,7 +11,7 @@ function SectionSix() {
     const testimonials = [
         {
             image: "/images/testimonial-1.png",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, commodi hic! Expedita laudantium accusantium voluptates nulla, iusto, delectus earum quisquam, reiciendis distinctio doloribus est impedit.",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, commodi hic! Expedita laudantium accusantium voluptates nulla, iusto.",
             name: "John Doe"
         },
         {
@@ -90,12 +90,12 @@ function SectionSix() {
                         width={300}
                         height={300}
                         alt="testimonial"
-                        className={`transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+                        className={`transition-opacity duration-500 lg:w-[300px] w-[800px]  ${fade ? 'opacity-100' : 'opacity-0'}`}
                     />
                 </div>
 
                 <div className='flex-1'>
-                    <div className="border-2 border-gray-400 p-6 rounded-tl-3xl space-y-4 dark:bg-[#222222] min-h-[250px]">
+                    <div className="border-2 border-gray-400 p-6 rounded-tl-3xl space-y-4 dark:bg-[#222222] min-h-[230px]">
                         <p className={`text-[18px] dark:text-gray-400 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
                             {testimonials[currentIndex].text}
                         </p>
