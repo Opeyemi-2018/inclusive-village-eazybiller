@@ -4,7 +4,7 @@ import { routes, Route } from "@/utils/route";
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
-import { GrSearch } from "react-icons/gr";
+// import { GrSearch } from "react-icons/gr";
 import { Button } from "@/components/ui/button";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -71,10 +71,10 @@ const Navbar = () => {
                             </Button>
                         </div>
 
-                        <div className="lg:flex hidden items-center gap-16">
-                            <button className="p-4 rounded-full dark:bg-white dark:text-gray-800 bg-gray-800 border text-white border-gray-400">
+                        <div className="lg:flex hidden">
+                            {/* <button className="p-4 rounded-full dark:bg-white dark:text-gray-800 bg-gray-800 border text-white border-gray-400">
                                 <GrSearch />
-                            </button>
+                            </button> */}
                             <Link href="/pages/solution#contact" scroll={true}>
                                 <button className="flex items-center gap-4 p-4 rounded-full font-semibold bg-[#75eba6] text-black">
                                     Let&apos;s Talk <FiArrowUpRight />

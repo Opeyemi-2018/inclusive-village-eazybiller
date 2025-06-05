@@ -11,24 +11,19 @@ export const routes = [
     path: "/",
   },
   {
-    id: 5,
+    id: 2,
     name: "About Us",
     path: "/pages/about",
   },
   {
-    id: 2,
+    id: 3,
     name: "Solution",
     path: "/pages/solution",
   },
   {
-    id: 3,
-    name: "company",
-    path: "/company",
-  },
-  {
     id: 4,
     name: "Portfolio",
-    path: "/portfolio",
+    path: "/pages/portfolio",
   },
 
 ]

@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import { motion } from "framer-motion";
 
 const AboutSectionFifth = () => {
     return (
@@ -16,12 +17,16 @@ const AboutSectionFifth = () => {
 
             {/* Foreground content */}
             <div className="relative z-10 max-w-5xl mx-auto flex flex-col md:flex-row items-center px-4">
-                <div className="w-full md:w-1/2 mb-8 md:mb-0 text-white">
+                <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true, amount: 0.5 }} className="w-full md:w-1/2 mb-8 md:mb-0 text-white">
                     <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
                     <p className="text-lg">
                         We&apos;d love to hear from you. Fill the form to get in touch.
                     </p>
-                </div>
+                </motion.div>
 
                 <div className="w-full md:w-1/2 text-gray-800">
                     <form className="space-y-6 bg-white bg-opacity-90 shadow-lg rounded-xl p-8">

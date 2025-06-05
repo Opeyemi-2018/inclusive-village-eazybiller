@@ -49,7 +49,7 @@ const Footer = () => {
                                 </div>
                                 <div className="flex flex-col">
                                     <h1 className="text-gray-500 font-bold">Whatsapp</h1>
-                                    <h1 className="text-white text-semibold text-2xl">info@gmail.com</h1>
+                                    <h1 className="text-white text-semibold text-2xl">+234</h1>
                                 </div>
                             </div>
 
@@ -64,12 +64,12 @@ const Footer = () => {
 
                         <div className="flex lg:items-center lg:flex-row flex-col lg:gap-0 gap-5 justify-between capitalize pt-6">
                             <div>
-                                <h1 className="font-semibold pb-3 text-2xl text-white">company</h1>
+                                <h1 className="font-semibold pb-3 text-2xl text-white">Links</h1>
                                 <div className="flex flex-col gap-4 text-gray-500 font-semibold ">
-                                    <Link href={'#'}>About Us</Link>
-                                    <Link href={'#'}>Out Team</Link>
-                                    <Link href={'#'}>our portfolio</Link>
-                                    <Link href={'#'}>careers</Link>
+                                    <Link href={'/'}>Homes</Link>
+                                    <Link href={'/pages/about'}>About Us</Link>
+                                    <Link href={'/pages/solution'}>Solution</Link>
+                                    <Link href={'/pages/portfolio'}>Portfolio</Link>
                                 </div>
                             </div>
                             <div className="space-y-4">
