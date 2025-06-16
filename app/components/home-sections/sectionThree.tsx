@@ -16,7 +16,18 @@ const SectionThree = () => {
             ],
             image: '/images/service-1.jpg',
             mask: '/images/ser-1.png',
-            bgColor: 'bg-[#E1EACD]' 
+            bgColor: 'bg-[#E1EACD]'
+        },
+        {
+            title: "Financial Technology (FinTech) Solutions",
+            features: [
+                "Remittance System",
+                "Payment Gateway System",
+                "Banking Software Solution", "Third (3rd) Party Service Integrations (Cybersource, Mastercard Payment Gateway Service, Mobile Money, USSD"
+            ],
+            image: '/images/service-4.jpg',
+            mask: '/images/ser-4.png',
+            bgColor: 'bg-[#E3FEF7]'
         },
         {
             title: " IT Infrastructure & Integration",
@@ -28,7 +39,7 @@ const SectionThree = () => {
             ],
             image: '/images/service-2.jpg',
             mask: '/images/ser-2.png',
-            bgColor: 'bg-[#F5F5F5]' 
+            bgColor: 'bg-[#F5F5F5]'
         },
         {
             title: "Cybersecurity Services",
@@ -40,20 +51,9 @@ const SectionThree = () => {
             ],
             image: '/images/service-3.jpg',
             mask: '/images/ser-3.png',
-            bgColor: 'bg-[#F1E7E7]' 
+            bgColor: 'bg-[#F1E7E7]'
         },
-        {
-            title: "Financial Technology (FinTech) Solutions",
-            features: [
-                "Remittance System",
-                "Payment Gateway System",
-                "Banking Software Solution",
-                "Third (3rd) Party Service Integrations (Cybersource, Mastercard Payment Gateway Service, Mobile Money, USSD"
-            ],
-            image: '/images/service-4.jpg',
-            mask: '/images/ser-4.png',
-            bgColor: 'bg-[#E3FEF7]' // Light teal
-        },
+
     ];
 
     return (
@@ -84,7 +84,7 @@ const SectionThree = () => {
                         ))}
                     </div>
 
-                    
+
 
                     <div className="relative lg:inline hidden" style={{
                         width: '280px',

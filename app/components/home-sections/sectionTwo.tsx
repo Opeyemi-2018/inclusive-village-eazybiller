@@ -5,6 +5,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 import { FiArrowUpRight } from "react-icons/fi";
+import Link from "next/link";
 const SectionTwo = () => {
     const [count, setCount] = useState(0);
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -123,7 +124,9 @@ const SectionTwo = () => {
             <div className="lg:max-w-3xl  mx-auto px-3">
                 <div className=" my-10 flex md:flex-row flex-col items-center justify-between md:gap-0 gap-3 capitalize bg-gray-200  dark:text-white dark:bg-[#222222] md:rounded-full rounded-md px-6 py-3">
                     <p className="">To Make Sure to Best Service Provide Our Clients.</p>
-                    <button className="rounded-full dark:bg-white dark:text-black text-white  bg-[#222222]  py-2 px-3 flex items-center gap-3">meet our expert <FiArrowUpRight /></button>
+                    <Link href="/pages/about#team" scroll={true}>
+                        <button className="rounded-full dark:bg-white dark:text-black text-white  bg-[#222222]  py-2 px-3 flex items-center gap-3">meet our expert <FiArrowUpRight /></button>
+                    </Link>
                 </div>
             </div>
         </>

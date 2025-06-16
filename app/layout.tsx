@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/header";
 import Footer from "./components/footer";
 import { ThemeProvider } from "./context/themeContext";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +14,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -29,13 +35,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} antialiased`}
       >
         <ThemeProvider>
-
-        <Navbar/>
-        {children}
-        <Footer/>
+          <Navbar />
+          {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -24,13 +24,13 @@ const Footer = () => {
                             <Link href={'/'}>
                                 <Image src={'/images/inclusive-logo.jpg'} alt="inclusive-logo" width={70} height={70} />
                             </Link>
-                            <h1 className="uppercase md:text-3xl text-2xl bg-[#222222] p-3 rounded-md text-white">inclusive village</h1>
+                            <h1 className="uppercase md:text-2xl text-1xl bg-[#222222] p-3 rounded-md text-white">inclusive village</h1>
                         </div>
                     </div>
 
                     {/* Right Div */}
                     <div className="flex flex-col gap-10 py-6 ">
-                        <h1 className="md:text-4xl text-2xl max-w-[600px] text-white">
+                        <h1 className="md:text-3xl text-1xl max-w-[600px] text-white">
                             We are Global Digital Brand Tech Agency.
                         </h1>
                         <div className="flex lg:flex-row flex-col lg:items-center justify-between lg:gap-10 gap-8">
@@ -38,7 +38,7 @@ const Footer = () => {
                                 <div className="bg-[#222222] p-3 rounded-md">
                                     <MdMarkEmailUnread size={25} className="text-white" />
                                 </div>
-                                <div className="flex flex-col">
+                                <div className="flex flex-col text-sm">
                                     <h1 className="text-gray-500 font-bold capitalize">send us mail</h1>
                                     <h1 className="text-white text-semibold text-2xl">info@gmail.com</h1>
                                 </div>
@@ -47,14 +47,14 @@ const Footer = () => {
                                 <div className="bg-[#222222] p-3 rounded-md">
                                     <Image src={'/icon/whatsapp.svg'} alt="whatsapp logo" width={30} height={30} />
                                 </div>
-                                <div className="flex flex-col">
+                                <div className="flex flex-col text-sm">
                                     <h1 className="text-gray-500 font-bold">Whatsapp</h1>
                                     <h1 className="text-white text-semibold text-2xl">+234</h1>
                                 </div>
                             </div>
 
                             <div>
-                                <Button className="flex gap-3 p-2 font-bold"
+                                <Button className="flex gap-3 p-2 font-bold text-sm"
                                     variant="outline"
                                 > View Site Map
                                     <FiArrowUpRight />
@@ -64,8 +64,8 @@ const Footer = () => {
 
                         <div className="flex lg:items-center lg:flex-row flex-col lg:gap-0 gap-5 justify-between capitalize pt-6">
                             <div>
-                                <h1 className="font-semibold pb-3 text-2xl text-white">Links</h1>
-                                <div className="flex flex-col gap-4 text-gray-500 font-semibold ">
+                                <h1 className="font-semibold pb-3 text-1xl text-white">Links</h1>
+                                <div className="flex flex-col gap-4 text-gray-500 text-sm font-semibold ">
                                     <Link href={'/'}>Homes</Link>
                                     <Link href={'/pages/about'}>About Us</Link>
                                     <Link href={'/pages/solution'}>Solution</Link>

@@ -4,7 +4,6 @@ import { routes, Route } from "@/utils/route";
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
-// import { GrSearch } from "react-icons/gr";
 import { Button } from "@/components/ui/button";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -24,6 +23,13 @@ const Navbar = () => {
     const handleToggle = () => setIsMobileNavOpen((prev) => !prev);
     const closeMobileNav = () => setIsMobileNavOpen(false);
 
+    const [openDropdownId, setOpenDropdownId] = useState<number | null>(null);
+
+    const handleDropdownToggle = (id: number) => {
+        setOpenDropdownId(prev => (prev === id ? null : id));
+    };
+
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10);
@@ -41,12 +47,12 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                         <div className="flex items-center lg:gap-16 gap-10">
                             <Link href={'/'}>
-                                <Image src={'/images/inclusive-logo.jpg'} alt="inclusive-logo" width={50} height={50} />
+                                <Image src={'/images/inclusive-logo.jpg'} alt="inclusive-logo" width={50} height={50} className="rounded-full" />
                             </Link>
 
                             <ul className="lg:flex hidden items-center gap-6 font-semibold dark:text-white text-gray-600 text-[17px]">
                                 {routes.map((route: Route) => (
-                                    <li key={route.id}>
+                                    <li key={route.id} className="relative group">
                                         <Link
                                             href={route.path}
                                             className={`relative transition-all duration-200 pb-1 ${pathname === route.path
@@ -56,9 +62,27 @@ const Navbar = () => {
                                         >
                                             {route.name}
                                         </Link>
+
+                                        {/* Dropdown (if children exist) */}
+                                        {route.children && (
+                                            <ul className="absolute top-full left-0 mt-2 w-44 bg-white dark:bg-[#222222] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                                {route.children.map((child) => (
+                                                    <li key={child.id}>
+                                                        <Link
+                                                            href={child.path}
+                                                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white text-gray-800"
+                                                        >
+                                                            {child.name}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
                                     </li>
                                 ))}
                             </ul>
+
+
 
                         </div>
                         <div className="flex items-center gap-6">
@@ -87,25 +111,57 @@ const Navbar = () => {
 
             {/* Mobile nav */}
             {isMobileNavOpen && (
-                <div className=" bg-white dark:bg-[#222222] fixed h-full w-80 z-30 top-0 left-0 lg:hidden shadow-lg transition-all duration-300">
+                <div className="bg-white dark:bg-[#222222] fixed h-full w-80 z-30 top-0 left-0 lg:hidden shadow-lg transition-all duration-300">
                     <nav className="p-6 flex flex-col h-full justify-between">
                         <div className="flex flex-col gap-10">
                             <div className="flex justify-between items-center">
-                                <Image src={'/images/inclusive-logo.jpg'} alt="inclusive-logo" width={50} height={50} />
+                                <Image src={'/images/inclusive-logo.jpg'} alt="inclusive-logo" width={50} height={50} className="rounded-full" />
                                 <Button onClick={closeMobileNav} className="bg-white text-black hover:text-white">
                                     <LiaTimesSolid />
                                 </Button>
                             </div>
 
-                            <ul className="flex flex-col gap-6 font-semibold dark:text-white text-gray-700 text-[17px]">
+                            {/* Mobile menu list */}
+                            <ul className="flex flex-col gap-4 font-semibold dark:text-white text-gray-700 text-[17px]">
                                 {routes.map((route: Route) => (
-                                    <li key={route.id}>
-                                        <Link href={route.path} onClick={closeMobileNav}>
-                                            {route.name}
-                                        </Link>
+                                    <li key={route.id} className="flex flex-col">
+                                        <div className="flex justify-between items-center">
+                                            <Link
+                                                href={route.path}
+                                                onClick={closeMobileNav}
+                                                className="py-1"
+                                            >
+                                                {route.name}
+                                            </Link>
+                                            {route.children && (
+                                                <button
+                                                    onClick={() => handleDropdownToggle(route.id)}
+                                                    className="text-sm px-2"
+                                                >
+                                                    {openDropdownId === route.id ? '-' : '+'}
+                                                </button>
+                                            )}
+                                        </div>
+
+                                        {route.children && openDropdownId === route.id && (
+                                            <ul className="pl-4 mt-2 flex flex-col gap-2">
+                                                {route.children.map((child) => (
+                                                    <li key={child.id}>
+                                                        <Link
+                                                            href={child.path}
+                                                            onClick={closeMobileNav}
+                                                            className="text-[15px] text-gray-600 dark:text-white hover:underline"
+                                                        >
+                                                            {child.name}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
                                     </li>
                                 ))}
                             </ul>
+
                         </div>
 
                         <Link href="/pages/solution#contact" scroll={true}>
@@ -116,6 +172,7 @@ const Navbar = () => {
                     </nav>
                 </div>
             )}
+
         </>
     );
 };

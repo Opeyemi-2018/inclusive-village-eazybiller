@@ -103,7 +103,7 @@ const AboutSectionThree = () => {
     }
 
     return (
-        <div className='max-w-6xl mx-auto pb-8 overflow-hidden px-4'>
+        <div id="team" className='max-w-6xl mx-auto pb-8 overflow-hidden px-4'>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
