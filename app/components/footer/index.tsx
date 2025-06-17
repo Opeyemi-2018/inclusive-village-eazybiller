@@ -1,105 +1,97 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { FiArrowUpRight } from "react-icons/fi";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { IoIosSend } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 
-
-
-
-
 const Footer = () => {
     return (
         <>
-            <div className='bg-[#1c1a1e] py-16 md:px-10 px-3'>
-                <div className="max-w-6xl mx-auto flex lg:flex-row flex-col gap-10">
-                    {/* Left Div with Right Border */}
-                    <div className="pr-6 lg:border-r lg:border-gray-300">
-                        <div className="flex flex-col gap-6">
-                            <Link href={'/'}>
-                                <Image src={'/images/inclusive-logo.jpg'} className="rounded-full" alt="inclusive-logo" width={70} height={70} />
-                            </Link>
-                            <h1 className="uppercase md:text-2xl text-1xl bg-[#222222] p-3 rounded-md text-white">inclusive village</h1>
+            <footer className='bg-[#1c1a1e] text-white py-16 px-4 md:px-10'>
+                <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                    {/* Logo & Brand */}
+                    <div className="space-y-4">
+                        <Link href={'/'}>
+                            <Image src="/images/inclusive-logo.jpg" alt="inclusive-logo" width={70} height={70} className="rounded-full" />
+                        </Link>
+                        <h2 className="uppercase text-xl bg-[#222222] p-3 rounded-md inline-block">Inclusive Village</h2>
+                        <p className="text-gray-400 text-sm max-w-xs">
+                            We are a global digital brand tech agency committed to building inclusive products.
+                        </p>
+                    </div>
+
+                    {/* Contact Section */}
+                    <div className="space-y-6">
+                        <h2 className="text-2xl font-semibold">Contact Us</h2>
+                        <div className="space-y-4">
+                            <div className="flex items-center gap-3">
+                                <div className="bg-[#222222] p-3 rounded-md">
+                                    <MdMarkEmailUnread size={22} />
+                                </div>
+                                <div>
+                                    <p className="text-gray-400 text-sm">Send us mail</p>
+                                    <p className="text-lg font-semibold">info@gmail.com</p>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <div className="bg-[#222222] p-3 rounded-md">
+                                    <Image src="/icon/whatsapp.svg" alt="whatsapp" width={24} height={24} />
+                                </div>
+                                <div>
+                                    <p className="text-gray-400 text-sm">WhatsApp</p>
+                                    <p className="text-lg font-semibold">+234</p>
+                                </div>
+                            </div>
+                            <button className="flex items-center gap-2 font-semibold text-sm mt-4">
+                                View Site Map <FiArrowUpRight />
+                            </button>
                         </div>
                     </div>
 
-                    {/* Right Div */}
-                    <div className="flex flex-col gap-10 py-6 ">
-                        <h1 className="md:text-3xl text-1xl max-w-[600px] text-white">
-                            We are Global Digital Brand Tech Agency.
-                        </h1>
-                        <div className="flex lg:flex-row flex-col lg:items-center justify-between lg:gap-10 gap-8">
-                            <div className="flex items-center gap-2 ">
-                                <div className="bg-[#222222] p-3 rounded-md">
-                                    <MdMarkEmailUnread size={25} className="text-white" />
-                                </div>
-                                <div className="flex flex-col text-sm">
-                                    <h1 className="text-gray-500 font-bold capitalize">send us mail</h1>
-                                    <h1 className="text-white text-semibold text-2xl">info@gmail.com</h1>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-2 ">
-                                <div className="bg-[#222222] p-3 rounded-md">
-                                    <Image src={'/icon/whatsapp.svg'} alt="whatsapp logo" width={30} height={30} />
-                                </div>
-                                <div className="flex flex-col text-sm">
-                                    <h1 className="text-gray-500 font-bold">Whatsapp</h1>
-                                    <h1 className="text-white text-semibold text-2xl">+234</h1>
-                                </div>
-                            </div>
-
-                            <div>
-                                <Button className="flex gap-3 p-2 font-bold text-sm"
-                                    variant="outline"
-                                > View Site Map
-                                    <FiArrowUpRight />
-                                </Button>
-                            </div>
+                    {/* Newsletter & Links */}
+                    <div className="space-y-6">
+                        <h2 className="text-2xl font-semibold">Newsletter</h2>
+                        <div className="relative">
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                className="w-full p-3 bg-[#222222] rounded-md text-white placeholder-gray-400"
+                            />
+                            <IoIosSend size={20} className="absolute top-4 right-3 text-white" />
+                        </div>
+                        <p className="capitalize text-sm">Connect with us today!!!</p>
+                        <div className="flex gap-4 mt-2">
+                            <a className="bg-white p-2 rounded-full text-black" href="#"><FaFacebookF /></a>
+                            <a className="bg-white p-2 rounded-full text-black" href="#"><RiTwitterXFill /></a>
+                            <a className="bg-white p-2 rounded-full text-black" href="#"><FaLinkedinIn /></a>
+                            <a className="bg-white p-2 rounded-full text-black" href="#"><AiFillInstagram /></a>
                         </div>
 
-                        <div className="flex lg:items-center lg:flex-row flex-col lg:gap-0 gap-5 justify-between capitalize pt-6">
-                            <div>
-                                <h1 className="font-semibold pb-3 text-1xl text-white">Links</h1>
-                                <div className="flex flex-col gap-4 text-gray-500 text-sm font-semibold ">
-                                    <Link href={'/'}>Homes</Link>
-                                    <Link href={'/pages/about'}>About Us</Link>
-                                    <Link href={'/pages/solution'}>Solution</Link>
-                                    <Link href={'/pages/portfolio'}>Portfolio</Link>
-                                </div>
-                            </div>
-                            <div className="space-y-4">
-                                <h1 className="font-semibold pb-3 text-2xl text-white">newsletter</h1>
-                                <div className="relative">
-                                    <input type="text" placeholder="email" className="p-3 w-full rounded-md bg-[#222222]" />
-                                    <IoIosSend size={25} className="absolute text-white top-4 right-2" />
-                                </div>
-                                <h2 className="text-white capitalize">connect with us today!!!</h2>
-                                <div className="flex items-center lg:justify-between lg:gap-0 gap-10">
-                                    <button className="bg-white rounded-full p-2 text-black"><FaFacebookF /></button>
-                                    <button className="bg-white rounded-full p-2 text-black"><RiTwitterXFill /></button>
-                                    <button className="bg-white rounded-full p-2 text-black"><FaLinkedinIn /></button>
-                                    <button className="bg-white rounded-full p-2 text-black"><AiFillInstagram /></button>
-                                </div>
+                        <div className="pt-8">
+                            <h2 className="font-semibold text-xl mb-2">Quick Links</h2>
+                            <div className="flex flex-col gap-2 text-sm text-gray-400">
+                                <Link href="/">Home</Link>
+                                <Link href="/pages/about">About Us</Link>
+                                <Link href="/pages/solution">Solution</Link>
+                                <Link href="/pages/portfolio">Portfolio</Link>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
+            </footer>
 
-            </div>
-            <hr />
-
-            <div className="bg-[#1c1a1e] px-4 pb-3">
-                <h2 className="text-center text-gray-500 ">Copyright {new Date().getFullYear()}  All Right Reserved.</h2>
+            {/* Bottom Bar */}
+            <div className="bg-[#1c1a1e] border-t border-gray-700 py-4 text-center text-gray-500 text-sm">
+                © {new Date().getFullYear()} All Rights Reserved.
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

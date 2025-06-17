@@ -10,39 +10,47 @@ const AboutSectionTwo = () => {
     return (
         <div
             ref={ref}
-            className='bg-[#4D55CC] mt-20 my-10 lg:max-w-6xl flex lg:flex-row flex-col lg:gap-0 gap-8 lg:items-center justify-between mx-auto p-16 lg:rounded-lg text-white'
+            className='bg-[#1941f5] p-10  mt-10 flex lg:flex-row flex-col lg:gap-0 gap-8 lg:items-center justify-between text-white'
         >
             <div>
                 <h1 className='lg:text-5xl text-4xl font-bold'>
-                    {inView && <CountUp end={8} duration={2} suffix="+"/>}
+                    {inView && (
+                        <>
+                            <CountUp end={14} duration={2} />B+
+                        </>
+                    )}
                 </h1>
-                <p className='font-semibold text-2xl'>
-                    World-Wide <br /> Branches
-                </p>
+                <p className='font-semibold text-2xl'>Billed annually</p>
             </div>
             <div>
                 <h1 className='lg:text-5xl text-4xl font-bold'>
-                    {inView && <CountUp end={20} duration={2} suffix="+" />}
+                    {inView && (
+                        <>
+                            <CountUp end={60} duration={2} />+
+                        </>
+                    )}
                 </h1>
-                <p className='font-semibold text-2xl'>
-                    Professional <br /> Expert
-                </p>
+                <p className='font-semibold text-2xl'>Integrations</p>
             </div>
             <div>
                 <h1 className='lg:text-5xl text-4xl font-bold'>
-                    {inView && <CountUp end={250} duration={3} suffix="+" />}
+                    {inView && (
+                        <>
+                            <CountUp end={99.9} duration={2} decimals={1} />%
+                        </>
+                    )}
                 </h1>
-                <p className='font-semibold text-2xl'>
-                    Completed <br /> Projects
-                </p>
+                <p className='font-semibold text-2xl'>Uptime</p>
             </div>
             <div>
                 <h1 className='lg:text-5xl text-4xl font-bold'>
-                    {inView && <CountUp end={8} duration={2} suffix="+"/>}
+                    {inView && (
+                        <>
+                            <CountUp end={1.2} duration={2} decimals={1} />B+
+                        </>
+                    )}
                 </h1>
-                <p className='font-semibold text-2xl'>
-                    Year of <br /> Experience
-                </p>
+                <p className='font-semibold text-2xl'>Usage events weekly</p>
             </div>
         </div>
     );

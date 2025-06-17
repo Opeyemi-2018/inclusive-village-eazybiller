@@ -39,7 +39,7 @@ const HeroAbout = () => {
                     <h1 className='md:text-2xl text-1xl font-semibold'>Our Mission</h1>
                     <h2 className='md:text-5xl text-2xl font-bold'>Simplifying digital finance for all</h2>
                     <p className='text-1xl'>
-                         We are a team of dedicated professionals who are passionate about creating high-quality, user-friendly Software Application that meet the needs of our clients. Our goal is to provide you with a comprehensive range of services that will help you achieve your online goals.
+                        We are a team of dedicated professionals who are passionate about creating high-quality, user-friendly Software Application that meet the needs of our clients. Our goal is to provide you with a comprehensive range of services that will help you achieve your online goals.
                     </p>
                     <p className='text-1xl'>
                         Whether it&apos;s setting up a custom payment gateway, automating transaction workflows, or integrating digital wallets, we deliver fintech infrastructure that makes your business future-ready.
@@ -71,33 +71,36 @@ const HeroAbout = () => {
             </div>
 
             {/* fouth section start  */}
-            <div className='py-10 max-w-6xl px-3 mx-auto flex  md:flex-row flex-col justify-between gap-10'>
-                <div >
-                    <Image src="/images/bio.webp" alt="" width={400} height={400} />
-                    <div className='pt-4 space-y-1'>
-                        <h1 className='font-semibold'>MR SAM</h1>
-                        <p>GM, Payments & Partnerships</p>
-                        <a className='text-sm font-semibold underline' href="#">LinkedIn</a>
+            <div className='py-10 max-w-6xl px-3 mx-auto'>
+                <h1 className='md:text-4xl text-2xl font-semibold py-10'>Inclusive leadership</h1>
+                <div className=' flex  md:flex-row flex-col justify-between gap-10'>
+                    <div >
+                        <Image src="/images/bio.webp" alt="" width={400} height={400} />
+                        <div className='pt-4 space-y-1'>
+                            <h1 className='font-semibold'>MR SAM</h1>
+                            <p>GM, Payments & Partnerships</p>
+                            <a className='text-sm font-semibold underline' href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div >
+                        <Image src="/images/bio.webp" alt="" width={400} height={400} />
+                        <div className='pt-4 space-y-1'>
+                            <h1 className='font-semibold'>MR SAM</h1>
+                            <p>GM, Payments & Partnerships</p>
+                            <a className='text-sm font-semibold underline' href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div >
+                        <Image src="/images/bio.webp" alt="" width={400} height={400} />
+                        <div className='pt-4 space-y-1'>
+                            <h1 className='font-semibold'>MR SAM</h1>
+                            <p>GM, Payments & Partnerships</p>
+                            <a className='text-sm font-semibold underline' href="#">LinkedIn</a>
+                        </div>
                     </div>
                 </div>
-                <div >
-                    <Image src="/images/bio.webp" alt="" width={400} height={400} />
-                    <div className='pt-4 space-y-1'>
-                        <h1 className='font-semibold'>MR SAM</h1>
-                        <p>GM, Payments & Partnerships</p>
-                        <a className='text-sm font-semibold underline' href="#">LinkedIn</a>
-                    </div>
-                </div>
-                <div >
-                    <Image src="/images/bio.webp" alt="" width={400} height={400} />
-                    <div className='pt-4 space-y-1'>
-                        <h1 className='font-semibold'>MR SAM</h1>
-                        <p>GM, Payments & Partnerships</p>
-                        <a className='text-sm font-semibold underline' href="#">LinkedIn</a>
-                    </div>
-                </div>
+                {/* fouth section end  */}
             </div>
-            {/* fouth section end  */}
         </div>
     );
 };
