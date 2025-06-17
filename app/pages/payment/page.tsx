@@ -146,7 +146,7 @@ const Payment = () => {
                     </div>
 
                     <div className='flex-1'>
-                        <Image src="/images/maxio_payments-img.webp" alt="about hero" width={500} height={500} />
+                        <Image src="/images/maxio_payments-img.webp" alt="about  hero" className='md:inline hidden' width={500} height={500} />
                     </div>
                 </div>
             </section>
