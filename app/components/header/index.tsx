@@ -10,6 +10,7 @@ import { LiaTimesSolid } from "react-icons/lia";
 import { usePathname } from "next/navigation";
 import { IoIosSunny } from "react-icons/io";
 import { useTheme } from "@/app/context/themeContext";
+import { FiPlus, FiMinus } from "react-icons/fi";
 
 
 
@@ -136,21 +137,22 @@ const Navbar = () => {
                                             {route.children && (
                                                 <button
                                                     onClick={() => handleDropdownToggle(route.id)}
-                                                    className="text-sm px-2"
+                                                    className="text-2xl px-2"
                                                 >
-                                                    {openDropdownId === route.id ? '-' : '+'}
+                                                    {openDropdownId === route.id ? <FiMinus /> : <FiPlus />}
                                                 </button>
                                             )}
+
                                         </div>
 
                                         {route.children && openDropdownId === route.id && (
-                                            <ul className="pl-4 mt-2 flex flex-col gap-2">
+                                            <ul className="pl-4 mt-2 flex flex-col gap-4">
                                                 {route.children.map((child) => (
                                                     <li key={child.id}>
                                                         <Link
                                                             href={child.path}
                                                             onClick={closeMobileNav}
-                                                            className="text-[15px] text-gray-600 dark:text-white hover:underline"
+                                                            className=" text-gray-600 dark:text-white hover:underline"
                                                         >
                                                             {child.name}
                                                         </Link>
