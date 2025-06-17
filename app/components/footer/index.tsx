@@ -22,7 +22,7 @@ const Footer = () => {
                     <div className="pr-6 lg:border-r lg:border-gray-300">
                         <div className="flex flex-col gap-6">
                             <Link href={'/'}>
-                                <Image src={'/images/inclusive-logo.jpg'} alt="inclusive-logo" width={70} height={70} />
+                                <Image src={'/images/inclusive-logo.jpg'} className="rounded-full" alt="inclusive-logo" width={70} height={70} />
                             </Link>
                             <h1 className="uppercase md:text-2xl text-1xl bg-[#222222] p-3 rounded-md text-white">inclusive village</h1>
                         </div>

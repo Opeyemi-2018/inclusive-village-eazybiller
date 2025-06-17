@@ -13,7 +13,7 @@ const HeroAbout = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true, amount: 0.5 }} className='md:space-y-7 space-y-5'>
-                        <h1 className='md:text-2xl text-1xl font-semibold'>Careers at Inclusive Village</h1>
+                        <h1 className='md:text-2xl text-1xl font-semibold'>Welcome to Inclusive Village!</h1>
                         <h2 className='md:text-5xl text-2xl font-bold'>Driving financial innovation for modern businesses</h2>
                         <p className='text-1xl'>
                             Inclusive empowers businesses with cutting-edge fintech solutions, from seamless payment gateways to financial automation tools, helping them scale efficiently in today&apos;s fast-paced digital economy.
@@ -39,7 +39,7 @@ const HeroAbout = () => {
                     <h1 className='md:text-2xl text-1xl font-semibold'>Our Mission</h1>
                     <h2 className='md:text-5xl text-2xl font-bold'>Simplifying digital finance for all</h2>
                     <p className='text-1xl'>
-                        Our mission is to create a seamless financial experience for businesses by providing secure, scalable, and intelligent payment systems and APIs.
+                         We are a team of dedicated professionals who are passionate about creating high-quality, user-friendly Software Application that meet the needs of our clients. Our goal is to provide you with a comprehensive range of services that will help you achieve your online goals.
                     </p>
                     <p className='text-1xl'>
                         Whether it&apos;s setting up a custom payment gateway, automating transaction workflows, or integrating digital wallets, we deliver fintech infrastructure that makes your business future-ready.
@@ -56,14 +56,13 @@ const HeroAbout = () => {
                     </div>
                     <div className='md:space-y-7 space-y-5 flex-1 '>
                         <p>
-                            Our experienced team of developers, product strategists, and fintech specialists work together to deliver scalable financial solutions that align with your business goals.
+                            Whether you need a simple brochure, a Software Application or a complex cross-platform, we have the skills and expertise to deliver a Software Application that exceeds your expectations.
                         </p>
                         <p className='text-1xl'>
-                            From on-demand payments and recurring billing to real-time analytics and compliance, Inclusive gives your business the tools it needs to stay competitive in a fast-evolving market.
+                            At Inclusive Village, we understand that every business is unique, which is why we take the time to get to know your business and your target audience. This allows us to create a customized Software Application that not only looks great but also meets the specific needs of your business.
                         </p>
                         <p className='text-1xl'>
-                            We ensure top-notch security and seamless integration with banks, wallets, and other financial systems—so you can focus on growth while we handle the complexity.
-                        </p>
+                            We have years of experience in Software Application development, and we use the latest technologies to ensure that your Software Application is fast, secure, and reliable.                        </p>
                         <p className='text-1xl'>
                             Inclusive unifies your financial operations from payment collections and invoicing to financial reporting into one intelligent platform built for the future of fintech.
                         </p>

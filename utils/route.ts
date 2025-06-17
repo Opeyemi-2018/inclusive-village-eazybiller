@@ -5,31 +5,36 @@ export interface Route {
   children?: Route[]; // optional for nested routes
 }
 
-export const routes = [
+export const routes: Route[] = [
   {
     id: 1,
     name: "Home",
     path: "/",
   },
-
   {
     id: 2,
+    name: "Payment",
+    path: "/pages/payment",
+   
+  },
+  {
+    id: 3,
     name: "Solution",
     path: "/pages/solution",
   },
   {
-    id: 3,
+    id: 4,
     name: "Portfolio",
     path: "/pages/portfolio",
   },
-    {
-    id: 4,
+  {
+    id: 5,
     name: "Company",
     path: "/pages/about",
     children: [
-      { id: 21, name: "About Us", path: "/pages/about" },
-      { id: 22, name: "Career", path: "/pages/career" },
-      { id: 23, name: "Partner", path: "/pages/partner" },
+      { id: 51, name: "About Us", path: "/pages/about" },
+      { id: 52, name: "Career", path: "/pages/career" },
+      { id: 53, name: "Partner", path: "/pages/partner" },
     ],
   },
 ];

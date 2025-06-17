@@ -68,11 +68,11 @@ const SectionOne = () => {
                                 loop
                             />
                         </div>
-                                                <Link href="/pages/solution#contact" scroll={true}>
+                        <Link href="/pages/solution#contact" scroll={true}>
 
-                        <button className="flex items-center gap-3 bg-[#64ec9d] text-gray-800 p-4 text-[18px] font-semibold  hover:bg-gray-800 hover:text-white transition">
-                            Schedule a free consultation <FiArrowUpRight />
-                        </button>
+                            <button className="flex items-center gap-3 bg-[#64ec9d] text-gray-800 p-4 text-[18px] font-semibold  hover:bg-gray-800 hover:text-white transition">
+                                Schedule a free consultation <FiArrowUpRight />
+                            </button>
                         </Link>
                     </div>
                 </div>

@@ -1,72 +1,90 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
-import { HiOutlineLightBulb } from "react-icons/hi";
 import { motion } from "framer-motion";
 
-import { FiArrowUpRight } from "react-icons/fi";
-import Link from "next/link";
 const SectionTwo = () => {
-    const [count, setCount] = useState(0);
-    const sectionRef = useRef<HTMLDivElement>(null);
-    const targetCount = 250;
-    const duration = 2000;
-    const isCounting = useRef(false);
+    // const [count, setCount] = useState(0);
+    // const sectionRef = useRef<HTMLDivElement>(null);
+    // const targetCount = 250;
+    // const duration = 2000;
+    // const isCounting = useRef(false);
 
-    useEffect(() => {
-        const currentSection = sectionRef.current;  // copy ref.current here
+    // useEffect(() => {
+    //     const currentSection = sectionRef.current;  
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                const [entry] = entries;
-                if (entry.isIntersecting && !isCounting.current) {
-                    isCounting.current = true;
-                    setCount(0);
-                    startCounting();
-                } else if (!entry.isIntersecting) {
-                    isCounting.current = false;
-                }
-            },
-            { threshold: 0.5 }
-        );
+    //     const observer = new IntersectionObserver(
+    //         (entries) => {
+    //             const [entry] = entries;
+    //             if (entry.isIntersecting && !isCounting.current) {
+    //                 isCounting.current = true;
+    //                 setCount(0);
+    //                 startCounting();
+    //             } else if (!entry.isIntersecting) {
+    //                 isCounting.current = false;
+    //             }
+    //         },
+    //         { threshold: 0.5 }
+    //     );
 
-        if (currentSection) {
-            observer.observe(currentSection);
-        }
+    //     if (currentSection) {
+    //         observer.observe(currentSection);
+    //     }
 
-        return () => {
-            if (currentSection) {
-                observer.unobserve(currentSection);
-            }
-        };
-    }, []);
+    //     return () => {
+    //         if (currentSection) {
+    //             observer.unobserve(currentSection);
+    //         }
+    //     };
+    // }, []);
 
 
-    const startCounting = () => {
-        const startTime = Date.now();
+    // const startCounting = () => {
+    //     const startTime = Date.now();
 
-        const updateCount = () => {
-            const elapsed = Date.now() - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const currentCount = Math.floor(progress * targetCount);
-            setCount(currentCount);
+    //     const updateCount = () => {
+    //         const elapsed = Date.now() - startTime;
+    //         const progress = Math.min(elapsed / duration, 1);
+    //         const currentCount = Math.floor(progress * targetCount);
+    //         setCount(currentCount);
 
-            if (progress < 1) {
-                requestAnimationFrame(updateCount);
-            } else {
-                setCount(targetCount);
-                isCounting.current = false;
-            }
-        };
+    //         if (progress < 1) {
+    //             requestAnimationFrame(updateCount);
+    //         } else {
+    //             setCount(targetCount);
+    //             isCounting.current = false;
+    //         }
+    //     };
 
-        requestAnimationFrame(updateCount);
-    };
+    //     requestAnimationFrame(updateCount);
+    // };
 
     return (
         <>
-            <div className="max-w-6xl mx-auto flex md:flex-row flex-col justify-between md:gap-6 gap-3 md:px-6 px-3 py-10">
-                {/* Slide in from left */}
+            <div className='bg-[#1c1a1e] py-14 md:px-6 px-3  text-white'>
                 <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className='flex flex-col justify-center gap-5 max-w-2xl mx-auto items-center'>
+                    <h1 className='text-white md:text-5xl text-3xl font-bold'>Circle of Creative Professionals.</h1>
+                    <p className='text-gray-500 text-1xl md:ml-16 font-semibold'>We are committed to providing excellent customer service and will work closely with you throughout the development process to ensure that your Software Application meets your exact requirements.</p>
+                </motion.div>
+                <div className='flex items-center justify-center py-10'>
+                    <Image src={"/images/about-image.jpg"} alt='about' width={500} height={500} />
+                </div>
+
+                <div className='max-w-4xl mx-auto space-y-3 text-gray-500 text-1xl'>
+                    <p>
+                        For industries aiming to integrate secure and scalable payment gateways, we offer end-to-end solutions — from API integration and fraud prevention to compliance and user-friendly interfaces.
+                    </p>
+
+                    <p>
+                        We collaborate with banks to build innovative financial products that align with digital transformation goals. Whether it&apos;s mobile banking apps, loan automation systems, or AI-driven customer insights.
+                    </p>
+                </div>
+            </div>
+            {/* <motion.div
                     ref={sectionRef}
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -91,12 +109,11 @@ const SectionTwo = () => {
                     </div>
                 </motion.div>
 
-                {/* Optional: third div static (or animate as needed) */}
                 <div
                     className="p-6 shadow-md dark:bg-[#222222] bg-[#F5F5F5] dark:text-white capitalize space-y-4 hover:scale-105 transition-transform duration-300 ease-in-out"
                 >
                     <div className="flex justify-end">
-                        <HiOutlineLightBulb className="md:text-6xl text-2xl" />
+                        <HiOutlineLightBulb className="text-5xl p-3 rounded-full bg-blue-700 text-white" />
                     </div>
                     <h1 className="md:text-3xl text-2xl">cost efficiency</h1>
                     <p>
@@ -112,7 +129,7 @@ const SectionTwo = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="p-6 shadow-md dark:bg-[#222222] bg-[#F1E7E7] dark:text-white capitalize space-y-4 hover:scale-105 transition-transform duration-300 ease-in-out">
                     <div className="flex justify-end">
-                        <HiOutlineLightBulb className="md:text-6xl text-2xl" />
+                        <HiOutlineLightBulb className="text-5xl p-3 rounded-full bg-purple-700 text-white" />
                     </div>
                     <h1 className="md:text-3xl text-2xl">cost efficiency</h1>
                     <p>
@@ -127,8 +144,8 @@ const SectionTwo = () => {
                     <Link href="/pages/about#team" scroll={true}>
                         <button className="rounded-full dark:bg-white dark:text-black text-white  bg-[#222222]  py-2 px-3 flex items-center gap-3">meet our expert <FiArrowUpRight /></button>
                     </Link>
-                </div>
-            </div>
+                </div> */}
+
         </>
     );
 };

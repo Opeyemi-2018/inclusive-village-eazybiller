@@ -12,7 +12,7 @@ const AboutSectionFourth = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className='flex flex-col justify-center gap-5 max-w-2xl mx-auto items-center'>
                 <h1 className='text-white md:text-5xl text-3xl font-bold'>Collective of Creative Thinkers.</h1>
-                <p className='text-gray-500 text-1xl md:ml-16 font-semibold'>We are a collective of creative thinkers, tech enthusiasts, and strategic innovators. Our passion lies in helping businesses thrive in the world.</p>
+                <p className='text-gray-500 text-1xl md:ml-16 font-semibold'>Our team consists of talented designers, developers, and project managers who work together to ensure that your Software Application is delivered on time, within budget, and to the highest standards.</p>
             </motion.div>
             <div className='flex items-center justify-center py-10'>
                 <Image src={"/images/about-image.jpg"} alt='about' width={500} height={500} />

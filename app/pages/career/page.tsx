@@ -2,6 +2,14 @@
 import Image from 'next/image';
 import { motion } from "framer-motion";
 import { FaPlus } from "react-icons/fa6";
+import { RiPlaneLine } from "react-icons/ri";
+import { TbAlphabetBangla } from "react-icons/tb";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { MdOutlineLocationOn } from "react-icons/md";
+import { IoGlobeOutline } from "react-icons/io5";
+import Link from 'next/link';
+import { FiArrowUpRight } from "react-icons/fi";
+
 
 const Career = () => {
     return (
@@ -63,8 +71,8 @@ const Career = () => {
             {/* section two end */}
 
             {/* section third start */}
-            <div className='px-3 py-10 max-w-6xl mx-auto'>
-                <div className='flex items-center md:flex-row flex-col justify-between md:gap-6 gap-4'>
+            <div className='px-3 py-16 max-w-6xl mx-auto'>
+                <div className='flex items-center md:flex-row flex-col justify-between md:gap-10 gap-6'>
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -81,36 +89,86 @@ const Career = () => {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-3 md:gap-10 gap-4 pt-20'>
+                <div className='grid md:grid-cols-3 grid-cols-1  md:gap-10 gap-6 pt-20'>
                     <div className='space-y-2'>
                         <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><FaPlus /></button>
                         <p className='text-[20px] font-bold'>Medical, dental, and vision</p>
                     </div>
                     <div className='space-y-2'>
-                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><FaPlus /></button>
+                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><MdOutlineHealthAndSafety /></button>
                         <p className='text-[20px] font-bold'>A focus on mental health</p>
                         <p>with benefits like company-sponsored Headspace subscriptions</p>
                     </div>
                     <div className='space-y-2'>
-                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><FaPlus /></button>
-                        <p className='text-[20px] font-bold'>Medical and dental</p>
+                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><RiPlaneLine /></button>
+                        <p className='text-[20px] font-bold'>Regular team outings, celebrations, and contests</p>
                     </div>
                     <div className='space-y-2'>
-                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><FaPlus /></button>
-                        <p className='text-[20px] font-bold'>Medical and dental</p>
+                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><TbAlphabetBangla /></button>
+                        <p className='text-[20px] font-bold'>A strong, results-oriented team culture</p>
                     </div>
                     <div className='space-y-2'>
-                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><FaPlus /></button>
-                        <p className='text-[20px] font-bold'>Medical and dental</p>
+                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><MdOutlineLocationOn /></button>
+                        <p className='text-[20px] font-bold'>A casual work environment with location flexibility</p>
                     </div>
                     <div className='space-y-2'>
-                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><FaPlus /></button>
-                        <p className='text-[20px] font-bold'>Medical and dental</p>
+                        <button className='bg-[#1d1b1f] p-4 text-white md:text-2xl text-1xl'><IoGlobeOutline /></button>
+                        <p className='text-[20px] font-bold'>Travel to visit teams across the US </p>
                     </div>
                 </div>
 
             </div>
             {/* section third end */}
+
+
+
+            {/* section fouth start */}
+            <div className='bg-[#EAEFEF] py-20 px-3 '>
+                <div className='max-w-6xl mx-auto '>
+                    <h1 className='md:text-5xl text-2xl font-bold text-black'>The hiring process</h1>
+                    <div className='grid md:grid-cols-3 grid-cols-1 gap-10 text-gray-700'>
+                        <div className='pt-16 space-y-4'>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#1d1b1f] text-white inline-block'>1</h1>
+                            <h2 className='text-2xl font-semibold'>Apply Online</h2>
+                            <p>Check out our open positions and apply to the role that best suits your experience and background. Our goal is to get back to you quickly. Our recruiters are hard at work, though because of the volume of applications we receive, we cannot always get back to everyone. If there is a mutual fit, you will hear from us soon.</p>
+                        </div>
+                        <div className='pt-16 space-y-4'>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#1d1b1f] text-white inline-block'>2</h1>
+                            <h2 className='text-2xl font-semibold'>Recruiter Screen</h2>
+                            <p>Yay, the interest is mutual! One of our recruiters will reach out to you to set up an intro call. This will allow us to learn more about you, and more importantly, for you to learn more about us. The recruiter is there to be your expert and guide, so please come prepared with your questions.</p>                        </div>
+                        <div className='pt-16 space-y-4'>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#1d1b1f] text-white inline-block'>3</h1>
+                            <h2 className='text-2xl font-semibold'>Hiring Manager Screen</h2>
+                            <p>Once the recruiter has determined that you are a good fit for the role, they’ll set you up to speak more in depth with the hiring manager. This call will be 45-60 minutes and will dive into your background, the role and team here at Maxio, as well as any questions you might have about what success looks like at our company.</p>                        </div>
+                        <div className='pt-16 space-y-4'>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#1d1b1f] text-white inline-block'>4</h1>
+                            <h2 className='text-2xl font-semibold'>Team Interview</h2>
+                            <p>Depending on the role and team you are interviewing with, the “Team Interview” will take place with 2-4 individuals over the course of several days. This allows you to gain a clear understanding of what the day to day might look like in your new role, and to get a feel for the folks you’ll be working with.</p>                        </div>
+                        <div className='pt-16 space-y-4'>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#1d1b1f] text-white inline-block'>5</h1>
+                            <h2 className='text-2xl font-semibold'>Follow Up</h2>
+                            <p>You made it! The recruiter will reach out to chat with you about offer details (compensation, potential start date, any outlying questions and concerns). All details will be laid out precisely and clearly, so you feel equipped to make your decision.</p>                        </div>
+                        <div className='pt-16 space-y-4'>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#1d1b1f] text-white inline-block'>6</h1>
+                            <h2 className='text-2xl font-semibold'>Offer</h2>
+                            <p>Congratulations, we want to work together! Once we extend an offer, we request a response within 48 hours. The recruiter will be available to you to answer any questions you may have during that window.</p>                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* section fouth end */}
+
+
+            <div className='bg-[#ffe246] md:p-20 px-3 py-16'>
+                <div className='space-y-6'>
+                    <h1 className='md:text-5xl text-3xl font-bold text-black'>Ready to achieve sustainable growth in today’s market?</h1>
+                    <Link href="/pages/solution#contact" scroll={true}>
+
+                        <button className="flex items-center gap-3 bg-black text-white p-4 text-[18px] font-semibold  hover:bg-gray-800  transition">
+                            Schedule a free consultation <FiArrowUpRight />
+                        </button>
+                    </Link>
+                </div>
+            </div>
         </div>
     )
 }
