@@ -15,20 +15,31 @@ const Career = () => {
     return (
         <div className='md:pt-40 pt-28 min-h-screen'>
             {/* section one start */}
-            <div className='px-3 max-w-6xl mx-auto'>
-                <div className='flex md:items-center md:flex-row flex-col justify-between md:gap-6 gap-4'>
-                    <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        viewport={{ once: true, amount: 0.5 }} className='md:space-y-7 space-y-5'>
-                        <h1 className='md:text-2xl text-1xl font-semibold'>Careers at Inclusive Village</h1>
-                        <h2 className='md:text-5xl text-2xl font-bold'>Join our crew and build the future</h2>
+            <div className="relative overflow-hidden">
+                {/* Background Image */}
+                <Image
+                    src="/images/career.avif"
+                    alt="Career Background"
+                    fill
+                    className="object-cover z-0"
+                />
 
-                    </motion.div>
+                {/* Color Overlay */}
+                <div className="absolute inset-0 bg-[#00304e]/90 z-10"></div>
 
-                    <div>
-                        <Image src="/images/career.avif" alt="about hero" width={400} height={400} />
+                {/* Foreground Content */}
+                <div className="relative z-20 px-3 max-w-6xl mx-auto py-20">
+                    <div className="flex md:items-center md:flex-row flex-col justify-between md:gap-6 gap-4">
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                            className="md:space-y-7 space-y-5 text-white"
+                        >
+                            <h1 className="md:text-2xl text-xl font-semibold">Careers at Inclusive Village</h1>
+                            <h2 className="md:text-5xl text-2xl font-bold">Join our crew and build the future</h2>
+                        </motion.div>
                     </div>
                 </div>
             </div>
@@ -46,22 +57,22 @@ const Career = () => {
 
                     <div>
                         <div className='flex-1 space-y-2 mb-3'>
-                            <h1 className='px-6 py-4 text-3xl font-bold bg-white inline-block'>H</h1>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#ff7f50] inline-block'>H</h1>
                             <h2 className='font-bold text-2xl'>Honest and Open</h2>
                             <p>We’re candid about our product, our feedback, and ourselves.</p>
                         </div>
                         <div className='flex-1 space-y-2 mb-3'>
-                            <h1 className='px-6 py-4 text-3xl font-bold bg-white inline-block'>Y</h1>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#ff7f50] inline-block'>Y</h1>
                             <h2 className='font-bold text-2xl'>Your Input Matters</h2>
                             <p>We’re better together; our differences are strengths.</p>
                         </div>
                         <div className='flex-1 space-y-2'>
-                            <h1 className='px-6 py-4 text-3xl font-bold bg-white inline-block'>P</h1>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#ff7f50] inline-block'>P</h1>
                             <h2 className='font-bold text-2xl'>Passion for Progress</h2>
                             <p>We push boundaries to make incremental improvements daily.</p>
                         </div>
                         <div className='flex-1 space-y-2'>
-                            <h1 className='px-6 py-4 text-3xl font-bold bg-white inline-block'>E</h1>
+                            <h1 className='px-6 py-4 text-3xl font-bold bg-[#ff7f50] inline-block'>E</h1>
                             <h2 className='font-bold text-2xl'>Expect Excellence</h2>
                             <p>We expect the highest quality work from ourselves and others.</p>
                         </div>
@@ -158,17 +169,33 @@ const Career = () => {
             {/* section fouth end */}
 
 
-            <div className='bg-[#ffe246] md:p-20 px-3 py-16'>
-                <div className='space-y-6'>
-                    <h1 className='md:text-5xl text-3xl font-bold text-black'>Ready to achieve sustainable growth in today’s market?</h1>
-                    <Link href="/pages/solution#contact" scroll={true}>
+            <div className="relative overflow-hidden">
+                {/* Background Image */}
+                <Image
+                    src="/images/career.avif"
+                    alt="Growth Background"
+                    fill
+                    className="object-cover z-0"
+                />
 
-                        <button className="flex items-center gap-3 bg-black text-white p-4 text-[18px] font-semibold  hover:bg-gray-800  transition">
-                            Schedule a free consultation <FiArrowUpRight />
-                        </button>
-                    </Link>
+                {/* Overlay Color */}
+                <div className="absolute inset-0 bg-[#00304e]/90 z-10"></div>
+
+                {/* Foreground Content */}
+                <div className="relative z-20 md:p-20 px-3 py-16 text-white">
+                    <div className="space-y-6 max-w-5xl mx-auto">
+                        <h1 className="md:text-5xl text-3xl font-bold">
+                            Ready to achieve sustainable growth in today’s market?
+                        </h1>
+                        <Link href="/pages/solution#contact" scroll={true}>
+                            <button className="flex items-center gap-3 bg-white text-black p-4 text-[18px] font-semibold hover:bg-gray-300 transition">
+                                Schedule a free consultation <FiArrowUpRight />
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
+
         </div>
     )
 }

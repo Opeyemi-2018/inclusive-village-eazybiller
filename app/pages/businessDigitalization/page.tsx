@@ -1,14 +1,16 @@
 "use client";
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { FaLaptopHouse, FaGlobeAfrica } from "react-icons/fa";
-// import { IoMdRocket } from "react-icons/io";
+import React from "react";
+import { motion } from "framer-motion";
+import { FaLaptopHouse, FaGlobeAfrica } from "react-icons/fa";
+import { IoMdRocket } from "react-icons/io";
+import Image from "next/image";
+
 
 const Business = () => {
   return (
-    <div className="md:mt-44 mt-32 min-h-screen text-5xl bg-white text-gray-800 ">
-    
-      {/* <section className="text-center max-w-4xl mx-auto space-y-6 px-3">
+    <div className="md:mt-44 mt-32 min-h-screen  bg-white text-gray-800 ">
+
+      <section className="text-center max-w-4xl mx-auto space-y-6 px-3">
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +18,7 @@ const Business = () => {
           viewport={{ once: true }}
           className="text-2xl md:text-5xl font-bold"
         >
-          Future-Proof Your Business with Digital Transformation
+          Transforming Your Operations for the Digital Age
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -25,111 +27,117 @@ const Business = () => {
           viewport={{ once: true }}
           className="text-lg text-gray-600"
         >
-          We help companies leverage technology to improve customer experience,
-          operational efficiency, and global scalability — from startups to enterprises.
+
+          In today’s fast-changing world, digitalization is essential for growth. At Inclusive Village,
+          we help businesses streamline operations, boost efficiency, and embrace digital transformation with confidence.
         </motion.p>
-      
+
       </section>
 
-      <section className="mt-24 space-y-12 px-3">
-        <h2 className="text-3xl font-semibold text-center">
-          Why Digitalize Your Business?
-        </h2>
-        <div className="grid md:grid-cols-3 gap-10">
-          <div className="space-y-4 text-center">
-            <FaLaptopHouse className="text-4xl text-blue-600 mx-auto" />
-            <h4 className="font-bold text-lg">Smarter Operations</h4>
-            <p className="text-gray-600 text-sm">
-              Automate workflows, reduce manual work, and scale without increasing headcount.
-            </p>
-          </div>
-          <div className="space-y-4 text-center">
-            <FaGlobeAfrica className="text-4xl text-green-600 mx-auto" />
-            <h4 className="font-bold text-lg">Global Reach</h4>
-            <p className="text-gray-600 text-sm">
-              Serve customers anywhere with digital storefronts, mobile apps, and cloud access.
-            </p>
-          </div>
-          <div className="space-y-4 text-center">
-            <IoMdRocket className="text-4xl text-purple-600 mx-auto" />
-            <h4 className="font-bold text-lg">Faster Growth</h4>
-            <p className="text-gray-600 text-sm">
-              Use data and smart tools to launch products faster and respond to market shifts.
-            </p>
+      <section className="relative mt-20 text-white py-20 px-3 overflow-hidden">
+        <Image
+          src="/images/digital.jpg"
+          alt="Digital Transformation"
+          fill
+          className="object-cover z-0"
+        />
+
+        {/* Overlay Color */}
+        <div className="absolute inset-0 bg-[#00304e] bg-opacity-80 "></div>
+
+        {/* Content */}
+        <div className="relative z-20 max-w-6xl mx-auto space-y-12">
+          <h2 className="text-3xl font-semibold text-center">Our Approach to Business Digitalization?</h2>
+          <div className="grid md:grid-cols-3 gap-10">
+            <div className="space-y-4 text-center">
+              <FaLaptopHouse className="text-4xl text-[#ff7f50] mx-auto" />
+              <h4 className="font-bold text-lg">Discovery & Strategy</h4>
+              <p className="text-white/90 text-sm">
+                We begin by thoroughly assessing your operations to identify inefficiencies and opportunities. Then, we create a tailored digital roadmap aligned with your goals.              </p>
+            </div>
+            <div className="space-y-4 text-center">
+              <FaGlobeAfrica className="text-4xl text-[#ff7f50] mx-auto" />
+              <h4 className="font-bold text-lg">Implementation & Enablement</h4>
+              <p className="text-white/90 text-sm">
+                We help you choose and integrate the right technologies—from CRM to AI tools—while supporting your team with hands-on training and change management.              </p>
+            </div>
+            <div className="space-y-4 text-center">
+              <IoMdRocket className="text-4xl text-[#ff7f50] mx-auto" />
+              <h4 className="font-bold text-lg">Optimization & Growth</h4>
+              <p className="text-white/90 text-sm">
+                After deployment, we monitor performance, gather insights, and continuously refine processes to ensure long-term success and efficiency.              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="mt-24 bg-gray-50">
-        <h2 className="text-3xl font-semibold text-center mb-14">
-          Our Digitalization Services
-        </h2>
-        <div className="grid md:grid-cols-2 gap-12 px-3">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="bg-white  shadow p-6 space-y-4"
-          >
-            <h4 className="text-xl font-bold text-black">Digital Strategy</h4>
-            <p className="text-gray-600">
-              We assess your business and craft a tailored roadmap for digital maturity and competitive advantage.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="bg-white  shadow p-6 space-y-4"
-          >
-            <h4 className="text-xl font-bold text-black">Custom Solutions</h4>
-            <p className="text-gray-600">
-              From CRM systems to mobile apps, we design, build, and deploy tools tailored to your unique needs.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="bg-white  shadow p-6 space-y-4"
-          >
-            <h4 className="text-xl font-bold text-black">Cloud Migration</h4>
-            <p className="text-gray-600">
-              We help you move to secure cloud infrastructure that supports remote work and real-time collaboration.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="bg-white  shadow p-6 space-y-4"
-          >
-            <h4 className="text-xl font-bold text-black">Automation</h4>
-            <p className="text-gray-600">
-              Save time and cut costs by automating routine tasks like customer service, data entry, and reporting.
-            </p>
-          </motion.div>
+      <section className="relative mt-20 py-20 px-4 bg-[#f8f9fa]">
+        <div className="max-w-6xl mx-auto">
+          {/* Logo */}
+          <div className="flex justify-center mb-12">
+            <Image
+              src="/images/iv-logo-no-bg.png"
+              alt="Inclusive Village Logo"
+              width={100}
+              height={100}
+            />
+          </div>
+
+          {/* Section Heading */}
+          <h2 className="text-3xl font-semibold text-center text-[#084972] mb-12">
+            Key Benefits of Digital Transformation
+          </h2>
+
+          {/* Benefit Cards */}
+          <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Boost Efficiency",
+                desc: "Automate tasks and streamline operations to increase productivity.",
+                icon: <FaLaptopHouse size={32} className="text-[#084972]" />,
+              },
+              {
+                title: "Enhance Customer Experience",
+                desc: "Deliver seamless, personalized support across all channels.",
+                icon: <FaGlobeAfrica size={32} className="text-[#ff7f50]" />,
+              },
+              {
+                title: "Smarter Decisions",
+                desc: "Use real-time data and insights to guide business strategies.",
+                icon: <IoMdRocket size={32} className="text-[#084972]" />,
+              },
+              {
+                title: "Lower Costs",
+                desc: "Reduce manual work, cut errors, and optimize spending.",
+                icon: <FaLaptopHouse size={32} className="text-[#ff7f50]" />,
+              },
+              {
+                title: "Agility & Scalability",
+                desc: "Quickly adapt to changes and grow your operations seamlessly.",
+                icon: <FaGlobeAfrica size={32} className="text-[#084972]" />,
+              },
+              {
+                title: "Competitive Edge",
+                desc: "Stay ahead of the curve with innovation and tech adoption.",
+                icon: <IoMdRocket size={32} className="text-[#ff7f50]" />,
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-lg p-6 shadow-md space-y-4 text-center"
+              >
+                <div className="flex justify-center">{item.icon}</div>
+                <h4 className="font-bold text-lg text-[#084972]">{item.title}</h4>
+                <p className="text-gray-700 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-     
-      <section className="bg-[#1c1a1e] mt-24 text-gray-500 py-20 px-6  shadow-md text-center space-y-6">
-        <h3 className="text-3xl font-bold ">
-          Ready to Digitalize Your Business?
-        </h3>
-        <p className=" max-w-xl mx-auto">
-          Let’s help you turn challenges into digital advantages. Talk to our transformation experts today.
-        </p>
-        <button className="bg-white text-[#1c1a1e] px-8 py-3 rounded  transition font-medium">
-          Book a Free Consultation
-        </button>
-      </section> */}
 
-      <p className="text-center">coming soon</p> 
+
+
     </div>
   );
 };

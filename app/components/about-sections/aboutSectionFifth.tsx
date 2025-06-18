@@ -78,7 +78,7 @@ const AboutSectionFifth = () => {
                         {/* Submit Button */}
                         <button
                             type="submit"
-                            className="w-full bg-[#1c1a1e] text-white p-3 rounded-md transition"
+                            className="w-full bg-[#084972] text-white p-3 rounded-md transition"
                         >
                             Send Message
                         </button>

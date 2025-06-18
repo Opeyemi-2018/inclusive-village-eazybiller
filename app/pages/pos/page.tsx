@@ -17,7 +17,7 @@ const POSEChannel = () => {
                     <p className="text-gray-700 text-lg">
                         Inclusive Village offers secure, scalable, and efficient POS and E-Channel infrastructure that powers merchants, agents, and financial institutions across Africa. We deliver the technology that connects your business to your customers—anytime, anywhere.
                     </p>
-                    <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded text-lg font-medium">
+                    <button className="bg-[#084972] text-white px-6 py-3 rounded text-lg font-medium">
                         Get Started Today
                     </button>
                 </div>
@@ -110,12 +110,28 @@ const POSEChannel = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="my-32 bg-[#1c1a1e] py-16 text-gray-500 text-center md:rounded-lg mx-auto max-w-6xl">
-                <h3 className="text-3xl font-bold mb-4">Ready to digitize your payment flow?</h3>
-                <p className="mb-6 text-lg">Join hundreds of businesses using Inclusive Village POS and E-Channel to collect, manage, and grow their revenue.</p>
-                <button className="bg-white text-[#1c1a1e] px-6 py-3 rounded font-semibold hover:bg-gray-100 transition">
-                    Request a Demo
-                </button>
+            <section className="relative my-32 text-center text-white mx-auto max-w-6xl rounded-lg overflow-hidden">
+                {/* Background image */}
+                <Image
+                    src="/images/payment.jpg"
+                    alt="Payment background"
+                    fill
+                    className="object-cover z-0"
+                />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-[#084972]/90 z-10"></div>
+
+                {/* Foreground content */}
+                <div className="relative z-20 py-16 px-6">
+                    <h3 className="text-3xl font-bold mb-4">Ready to digitize your payment flow?</h3>
+                    <p className="mb-6 text-lg text-gray-300">
+                        Join hundreds of businesses using Inclusive Village POS and E-Channel to collect, manage, and grow their revenue.
+                    </p>
+                    <button className="bg-white text-[#1c1a1e] px-6 py-3 rounded font-semibold hover:bg-gray-100 transition">
+                        Request a Demo
+                    </button>
+                </div>
             </section>
         </div>
     );

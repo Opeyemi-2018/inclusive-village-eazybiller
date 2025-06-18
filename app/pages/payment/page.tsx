@@ -152,21 +152,42 @@ const Payment = () => {
                 </div>
             </section>
 
-            <section>
-                <div className='bg-[#ffe246] md:p-20 px-3 py-16 flex justify-between items-center'>
-                    <div className='space-y-6 flex-1'>
-                        <h1 className='md:text-5xl text-3xl font-bold text-black'>Experience seamless payment operations with Inclusive Village</h1>
+            <section className="relative h-fit overflow-hidden">
+                {/* Background Image */}
+                <Image
+                    src="/images/infra.jpg"
+                    alt="Infra background"
+                    fill
+                    className="object-cover z-0"
+                />
+
+                {/* Yellow overlay */}
+                <div className="absolute inset-0 bg-[#00304e]/90 z-10"></div>
+
+                {/* Content */}
+                <div className="relative z-20 md:p-20 px-3 py-16 flex justify-between items-center">
+                    <div className="space-y-6 flex-1">
+                        <h1 className="md:text-5xl text-3xl font-bold text-white">
+                            Experience seamless payment operations with Inclusive Village
+                        </h1>
                         <Link href="/pages/solution#contact" scroll={true}>
                             <button className="flex items-center gap-3 bg-black text-white p-4 text-[18px] font-semibold hover:bg-gray-800 transition">
                                 Schedule a free consultation <FiArrowUpRight />
                             </button>
                         </Link>
                     </div>
-                    <div className='md:inline hidden'>
-                        <Image src="/images/iv-logo-no-bg.png" alt="about hero" width={350} height={300} />
+
+                    <div className="md:inline hidden">
+                        <Image
+                            src="/images/iv-logo-no-bg.png"
+                            alt="about hero"
+                            width={350}
+                            height={300}
+                        />
                     </div>
                 </div>
             </section>
+
 
             <section className="py-20 px-4 bg-white">
                 <div className="max-w-6xl mx-auto">

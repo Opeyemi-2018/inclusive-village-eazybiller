@@ -75,11 +75,12 @@ const Footer = () => {
 
                         <div className="pt-8">
                             <h2 className="font-semibold text-xl mb-2">Quick Links</h2>
-                            <div className="flex flex-col gap-2 text-sm text-gray-400">
+                            <div className="flex md:flex-row flex-col gap-4 text-sm text-gray-400">
                                 <Link href="/">Home</Link>
-                                <Link href="/pages/about">About Us</Link>
-                                <Link href="/pages/solution">Solution</Link>
-                                <Link href="/pages/portfolio">Portfolio</Link>
+                                <Link href="/pages/payment">Payment</Link>
+                                <Link href="/pages/product">Product</Link>
+                                <Link href="/pages/developer">Developer</Link>
+                                 <Link href="/pages/company">Company</Link>
                             </div>
                         </div>
                     </div>

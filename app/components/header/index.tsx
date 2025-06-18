@@ -38,7 +38,7 @@ const Navbar = () => {
         <>
             {/* Desktop Navbar */}
             <div
-                className={`fixed right-0 left-0 z-20 top-0 transition-all duration-300 ${isScrolled
+                className={`fixed right-0 left-0 z-40 top-0 transition-all duration-300 ${isScrolled
                     ? "bg-white dark:bg-[#222222] shadow"
                     : "bg-transparent"
                     }`}
@@ -62,7 +62,7 @@ const Navbar = () => {
                                         <Link
                                             href={route.path}
                                             className={`relative transition-all duration-200 pb-1 ${pathname === route.path
-                                                ? "after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-green-500"
+                                                ? "after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[#ff7f50]"
                                                 : "hover:text-[#2b583e]"
                                                 }`}
                                         >
@@ -111,7 +111,7 @@ const Navbar = () => {
 
                         <div className="lg:flex hidden">
                             <Link href="/pages/solution#contact" scroll={true}>
-                                <button className="flex items-center gap-4 p-4 rounded-full font-semibold bg-[#75eba6] text-black">
+                                <button className="flex items-center gap-4 p-4 rounded-full font-semibold bg-[#084972]  text-white">
                                     Let&apos;s Talk <FiArrowUpRight />
                                 </button>
                             </Link>
@@ -122,7 +122,7 @@ const Navbar = () => {
 
             {/* Mobile nav */}
             {isMobileNavOpen && (
-                <div className="bg-white dark:bg-[#222222] fixed h-full w-80 z-30 top-0 left-0 lg:hidden shadow-lg transition-all duration-300">
+                <div className="bg-white dark:bg-[#222222] fixed h-full w-80 z-50 top-0 left-0 lg:hidden shadow-lg transition-all duration-300">
                     <nav className="p-6 flex flex-col h-full justify-between">
                         <div className="flex flex-col gap-10 overflow-y-auto">
                             <div className="flex justify-between items-center">
@@ -196,7 +196,7 @@ const Navbar = () => {
                         </div>
 
                         <Link href="/pages/solution#contact" scroll={true}>
-                            <button className="flex items-center gap-4 p-4 rounded-full font-semibold bg-[#75eba6] text-black">
+                            <button className="flex items-center gap-4 p-4 rounded-full font-semibold bg-[#084972] text-white">
                                 Let&apos;s Talk <FiArrowUpRight />
                             </button>
                         </Link>

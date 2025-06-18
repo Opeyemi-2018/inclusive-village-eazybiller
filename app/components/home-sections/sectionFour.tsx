@@ -49,11 +49,11 @@ const SectionFour = () => {
     <div className="max-w-6xl mx-auto py-16 space-y-8 px-3 overflow-hidden">
       <div className="flex lg:flex-row flex-col lg:gap-0 gap-3 items-center font-bold justify-between border border-gray-400 lg:rounded-full rounded-md max-w-[500px] mx-auto py-1 px-3">
         <div className="text-gray-600 dark:text-gray-400">
-          Our Globally <span className="text-[#64ec9d]">20K+</span> Clients.
+          Our Globally <span className="text-[#ff7f50]">20K+</span> Clients.
         </div>
         <VscDebugDisconnect size={25} />
         <div className="text-gray-600 dark:text-gray-400">
-          Our Happy Clients <span className="text-[#64ec9d]">90%+</span>.
+          Our Happy Clients <span className="text-[#ff7f50]">90%+</span>.
         </div>
       </div>
 

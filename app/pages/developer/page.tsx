@@ -24,7 +24,7 @@ const page = () => {
                         <li>Seamless API integration with your stack</li>
                         <li>Global currency support</li>
                     </ul>
-                    <button className="mt-4 px-6 py-3 bg-[#75eba6] text-black font-semibold rounded-md ">
+                    <button className="mt-4 px-6 py-3 bg-[#084972] text-white font-semibold rounded-md ">
                         Get Started
                     </button>
                 </div>

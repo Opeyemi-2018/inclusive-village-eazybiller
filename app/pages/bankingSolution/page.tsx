@@ -75,7 +75,7 @@ const Banking = () => {
                     {/* Image content */}
                     <div className="flex-1">
                         <Image
-                            src="/images/bank-dashboard.jpg"
+                            src="/images/banking.jpg"
                             alt="Banking dashboard"
                             width={800}
                             height={400}
@@ -107,30 +107,35 @@ const Banking = () => {
                     </div>
                 </section>
 
-                
-                {/* CTA */}
-                <section className="bg-[#ffe246] md:p-20 px-4 mb-14 py-16 flex flex-col md:flex-row items-center justify-between gap-10">
-                    <div className="space-y-5 max-w-xl">
-                        <h2 className="text-3xl md:text-4xl font-bold text-black">
-                            Transform your bank with our secure infrastructure
-                        </h2>
-                        <p className="text-black text-base">
-                            Join other financial institutions using our tools to stay compliant, innovate faster, and serve customers better.
-                        </p>
-                        <Link href="/pages/solution#contact" scroll={true}>
-                            <button className="flex items-center gap-2 bg-black text-white py-3 px-6 font-semibold hover:bg-gray-800 transition">
-                                Talk to our team <FiArrowUpRight />
-                            </button>
-                        </Link>
-                    </div>
 
-                    <div className="hidden md:block">
-                        <Image
-                            src="/images/iv-logo-no-bg.png"
-                            alt="Inclusive Village Logo"
-                            width={300}
-                            height={300}
-                        />
+                {/* CTA */}
+                <section className="relative overflow-hidden mb-14">
+                    {/* Background Image */}
+                    <Image
+                        src="/images/banking.jpg"
+                        alt="Inclusive Village Background"
+                        fill
+                        className="object-cover z-0"
+                    />
+
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-[#00304e]/90 z-10"></div>
+
+                    {/* Foreground Content */}
+                    <div className="relative z-20 md:p-20 px-4 py-16 flex flex-col md:flex-row items-center justify-between gap-10 text-white">
+                        <div className="space-y-5 max-w-xl">
+                            <h2 className="text-3xl md:text-4xl font-bold">
+                                Transform your bank with our secure infrastructure
+                            </h2>
+                            <p className="text-base">
+                                Join other financial institutions using our tools to stay compliant, innovate faster, and serve customers better.
+                            </p>
+                            <Link href="/pages/solution#contact" scroll={true}>
+                                <button className="flex items-center gap-2 bg-white text-black py-3 px-6 font-semibold hover:bg-gray-300 transition">
+                                    Talk to our team <FiArrowUpRight />
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </section>
 
