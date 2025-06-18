@@ -1,17 +1,18 @@
-"use client"
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+"use client";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
-import { FaSyncAlt, FaCalendarAlt, FaUsers } from "react-icons/fa";
+import {
+    FaSyncAlt,
+    FaCalendarAlt,
+    FaUsers,
+    FaDollarSign
+} from "react-icons/fa";
 import { FiArrowUpRight } from 'react-icons/fi';
 import { MdOutlinePayments } from "react-icons/md";
-import { FaDollarSign } from "react-icons/fa6";
 import { FcAcceptDatabase } from "react-icons/fc";
 import { GrGateway } from "react-icons/gr";
 import { CgInsights } from "react-icons/cg";
-
-
-
 
 const paymentGaps = [
     {
@@ -20,7 +21,7 @@ const paymentGaps = [
         bgColor: "bg-blue-700",
         title: "Prevent lost revenue",
         description:
-            "Reduce revenue leakage by automating chargeback management, reconciling payments in real time, and consolidating transactions across gateways and currencies  so nothing gets lost between payment, billing, and accounting systems."
+            "Reduce revenue leakage by automating chargeback management, reconciling payments in real time, and consolidating transactions across gateways and currencies so nothing gets lost between payment, billing, and accounting systems."
     },
     {
         id: 2,
@@ -100,11 +101,14 @@ const Payment = () => {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        viewport={{ once: true, amount: 0.5 }} className='md:space-y-7 space-y-5 flex-1'>
+                        viewport={{ once: true, amount: 0.5 }}
+                        className='md:space-y-7 space-y-5 flex-1'
+                    >
                         <h1 className='md:text-2xl text-1xl font-semibold'>SaaS Payments</h1>
                         <h2 className='md:text-5xl text-2xl font-bold'>End-to-End Payments Lifecycle Management</h2>
                         <p className='text-1xl'>
-                            Inclusive Village Payments automates disputes, reconciles deposits, and supports multi-currency transactions and international payment methods—so SaaS businesses can streamline global payment operations and close books faster. </p>
+                            Inclusive Village Payments automates disputes, reconciles deposits, and supports multi-currency transactions and international payment methods—so SaaS businesses can streamline global payment operations and close books faster.
+                        </p>
                     </motion.div>
 
                     <div className='flex-1'>
@@ -112,7 +116,6 @@ const Payment = () => {
                     </div>
                 </div>
             </div>
-
 
             <section className="py-28 px-3 bg-white">
                 <div className="max-w-6xl mx-auto">
@@ -137,41 +140,33 @@ const Payment = () => {
                 </div>
             </section>
 
-
             <section className='pb-20 pt-16 px-3'>
                 <div className='flex items-center md:flex-row md:gap-0 gap-8 flex-col max-w-6xl mx-auto'>
                     <div className='flex-1 space-y-8'>
                         <h1 className='font-bold md:text-5xl text-3xl'>Controller-approved payment platform insights</h1>
                         <p className='text-gray-700'>Inclusive Village Payments reduces manual effort and increases visibility with a unified, international-ready platform. Easily track payments, invoices, and contracts across currencies and geographies, all in real time, so your finance team spends less time in spreadsheets and more time driving strategy.</p>
                     </div>
-
                     <div className='flex-1'>
-                        <Image src="/images/maxio_payments-img.webp" alt="about  hero" className='md:inline hidden' width={500} height={500} />
+                        <Image src="/images/maxio_payments-img.webp" alt="about hero" className='md:inline hidden' width={500} height={500} />
                     </div>
                 </div>
             </section>
-
-
-
 
             <section>
                 <div className='bg-[#ffe246] md:p-20 px-3 py-16 flex justify-between items-center'>
                     <div className='space-y-6 flex-1'>
                         <h1 className='md:text-5xl text-3xl font-bold text-black'>Experience seamless payment operations with Inclusive Village</h1>
                         <Link href="/pages/solution#contact" scroll={true}>
-
-                            <button className="flex items-center gap-3 bg-black text-white p-4 text-[18px] font-semibold  hover:bg-gray-800  transition">
+                            <button className="flex items-center gap-3 bg-black text-white p-4 text-[18px] font-semibold hover:bg-gray-800 transition">
                                 Schedule a free consultation <FiArrowUpRight />
                             </button>
                         </Link>
                     </div>
-
                     <div className='md:inline hidden'>
                         <Image src="/images/iv-logo-no-bg.png" alt="about hero" width={350} height={300} />
                     </div>
                 </div>
             </section>
-
 
             <section className="py-20 px-4 bg-white">
                 <div className="max-w-6xl mx-auto">
@@ -181,13 +176,8 @@ const Payment = () => {
 
                     <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
                         {SaasPayment.map(({ id, icon, bgColor, title, description }) => (
-                            <div
-                                key={id}
-                                className="bg-gray-100 p-6 rounded shadow-sm hover:shadow-md transition duration-200"
-                            >
-                                <div
-                                    className={`w-12 h-12 flex items-center justify-center rounded-sm mb-4 ${bgColor}`}
-                                >
+                            <div key={id} className="bg-gray-100 p-6 rounded shadow-sm hover:shadow-md transition duration-200">
+                                <div className={`w-12 h-12 flex items-center justify-center rounded-sm mb-4 ${bgColor}`}>
                                     {icon}
                                 </div>
                                 <h3 className="font-semibold text-black text-lg mb-2">{title}</h3>
@@ -198,8 +188,51 @@ const Payment = () => {
                 </div>
             </section>
 
-        </div>
-    )
-}
+            {/* New Section: Remittance, Gateway & 3rd Party Integration */}
+            <section className="py-24 px-4 bg-gray-50">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+                        Powerful Integrations and Global Remittance Support
+                    </h2>
+                    <p className="text-gray-700 max-w-3xl mb-12">
+                        Inclusive Village Payments goes beyond standard processing to support international remittance, seamless third-party integration, and full gateway control—giving SaaS businesses the flexibility and reach they need to scale globally.
+                    </p>
 
-export default Payment
+                    <div className="grid md:grid-cols-3 gap-10">
+                        <div className="bg-white p-6 shadow-md rounded-md hover:shadow-lg transition">
+                            <div className="w-12 h-12 flex items-center justify-center bg-blue-700 rounded-sm mb-4">
+                                <FaDollarSign className="text-white text-xl" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-black mb-2">International Remittance</h3>
+                            <p className="text-gray-700 text-sm">
+                                Send and receive payments globally with real-time currency conversion and compliance-ready workflows. Ensure quick, transparent remittance experiences for your customers and partners worldwide.
+                            </p>
+                        </div>
+
+                        <div className="bg-white p-6 shadow-md rounded-md hover:shadow-lg transition">
+                            <div className="w-12 h-12 flex items-center justify-center bg-blue-700 rounded-sm mb-4">
+                                <GrGateway className="text-white text-xl" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-black mb-2">Custom Payment Gateway</h3>
+                            <p className="text-gray-700 text-sm">
+                                Route transactions through multiple gateways to reduce failure rates and optimize costs. Our built-in gateway system gives you total control and visibility over your payment flow.
+                            </p>
+                        </div>
+
+                        <div className="bg-white p-6 shadow-md rounded-md hover:shadow-lg transition">
+                            <div className="w-12 h-12 flex items-center justify-center bg-blue-700 rounded-sm mb-4">
+                                <FaSyncAlt className="text-white text-xl" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-black mb-2">3rd Party Integration</h3>
+                            <p className="text-gray-700 text-sm">
+                                Easily integrate with CRM, ERP, accounting tools, fraud detection services, and other business platforms. Our flexible API layer ensures you can connect with the tools you already trust.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+};
+
+export default Payment;

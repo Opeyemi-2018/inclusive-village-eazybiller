@@ -19,32 +19,32 @@ export const routes: Route[] = [
       {
         id: 31,
         name: "Payment & Integrations",
-        path: "/pages/product/payment-integrations", // Remittance, Gateway, 3rd Party
+        path: "/pages/payment", // Remittance, Gateway, 3rd Party
       },
       {
         id: 32,
         name: "Banking Solutions",
-        path: "/pages/product/banking", // Banking software only
+        path: "/pages/bankingSolution", 
       },
       {
         id: 33,
         name: "POS & E-Channels",
-        path: "/pages/product/pos-echannels",
+        path: "/pages/pos",
       },
       {
         id: 34,
         name: "Business Digitalization",
-        path: "/pages/product/digitalization",
+        path: "/pages/businessDigitalization",
       },
       {
         id: 35,
         name: "Industry Systems",
-        path: "/pages/product/industry-systems",
+        path: "/pages/industrySystems",
       },
       {
         id: 36,
         name: "App & Cloud Development",
-        path: "/pages/product/app-cloud",
+        path: "/pages/appCloud",
       },
     ],
   },

@@ -71,9 +71,9 @@ const Navbar = () => {
 
                                         {route.children && (
                                             <ul
-                                                className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white dark:bg-[#222222] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-4 ${route.children.length > 4
-                                                        ? "grid grid-cols-3 gap-4 w-[650px]"
-                                                        : "flex flex-col gap-2 w-56"
+                                                className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white dark:bg-[#222222] shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-4 ${route.children.length > 4
+                                                    ? "grid grid-cols-2 gap-4 w-[450px]"
+                                                    : "flex flex-col gap-2 w-56"
                                                     }`}
                                             >                                                {route.children.map((child) => (
                                                 <li key={child.id}>
