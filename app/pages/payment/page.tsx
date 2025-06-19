@@ -147,7 +147,7 @@ const Payment = () => {
                         <p className='text-gray-700'>Inclusive Village Payments reduces manual effort and increases visibility with a unified, international-ready platform. Easily track payments, invoices, and contracts across currencies and geographies, all in real time, so your finance team spends less time in spreadsheets and more time driving strategy.</p>
                     </div>
                     <div className='flex-1'>
-                        <Image src="/images/maxio_payments-img.webp" alt="about hero" className='md:inline hidden' width={500} height={500} />
+                        <Image src="/images/payment-dashboard.jpg" alt="about hero" className='md:inline hidden' width={500} height={500} />
                     </div>
                 </div>
             </section>
@@ -170,7 +170,7 @@ const Payment = () => {
                         <h1 className="md:text-5xl text-3xl font-bold text-white">
                             Experience seamless payment operations with Inclusive Village
                         </h1>
-                        <Link href="/pages/solution#contact" scroll={true}>
+                        <Link href="/pages/about#contact" scroll={true}>
                             <button className="flex items-center gap-3 bg-black text-white p-4 text-[18px] font-semibold hover:bg-gray-800 transition">
                                 Schedule a free consultation <FiArrowUpRight />
                             </button>

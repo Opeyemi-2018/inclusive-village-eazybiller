@@ -62,9 +62,9 @@ const SectionFive = () => {
             <h1 className="text-white lg:text-3xl text-2xl font-bold mb-4">
               20<span className="text-[#ff7f50]">+</span> <br /> Years of Experience.
             </h1>
-            <Link href="/pages/solution#contact" scroll={true}>
+            <Link href="/pages/about/#contact" scroll={true}>
               <button className="flex items-center mt-6 gap-3 bg-white text-gray-800 p-4 text-[18px] font-semibold hover:bg-gray-800 hover:text-white transition">
-                Schedule a free consultation <FiArrowUpRight />
+                Let&apos;s Talk<FiArrowUpRight />
               </button>
             </Link>
           </div>

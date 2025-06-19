@@ -1,5 +1,6 @@
 import AboutSectionTwo from '@/app/components/about-sections/aboutSectionTwo'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -24,9 +25,11 @@ const page = () => {
                         <li>Seamless API integration with your stack</li>
                         <li>Global currency support</li>
                     </ul>
-                    <button className="mt-4 px-6 py-3 bg-[#084972] text-white font-semibold rounded-md ">
-                        Get Started
-                    </button>
+                    <Link href="/pages/about#contact" scroll={true}>
+                        <button className="mt-4 px-6 py-3 bg-[#084972] text-white font-semibold rounded-md ">
+                            Let&apos;s Talk
+                        </button>
+                    </Link >
                 </div>
 
                 {/* Image */}

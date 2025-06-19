@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutSectionFifth = () => {
     return (
-        <div id="contact" className="relative py-16 overflow-hidden">
+        <div id="contact" className="relative py-16 overflow-hidden [scroll-margin-top:90px]">
             <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
@@ -18,10 +18,10 @@ const AboutSectionFifth = () => {
             {/* Foreground content */}
             <div className="relative z-10 max-w-5xl mx-auto flex flex-col md:flex-row items-center px-4">
                 <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true, amount: 0.5 }} className="w-full md:w-1/2 mb-8 md:mb-0 text-white">
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: true, amount: 0.5 }} className="w-full md:w-1/2 mb-8 md:mb-0 text-white">
                     <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
                     <p className="text-lg">
                         We&apos;d love to hear from you. Fill the form to get in touch.

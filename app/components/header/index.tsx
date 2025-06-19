@@ -38,9 +38,7 @@ const Navbar = () => {
         <>
             {/* Desktop Navbar */}
             <div
-                className={`fixed right-0 left-0 z-40 top-0 transition-all duration-300 ${isScrolled
-                    ? "bg-white dark:bg-[#222222] shadow"
-                    : "bg-transparent"
+                className={`fixed right-0 left-0 z-40 top-0 transition-all duration-300 ${isScrolled ? "bg-white dark:bg-[#222222] shadow" : "bg-transparent"
                     }`}
             >
                 <nav className="max-w-6xl md:px-5 px-3 mx-auto py-6">
@@ -75,16 +73,20 @@ const Navbar = () => {
                                                     ? "grid grid-cols-2 gap-4 w-[450px]"
                                                     : "flex flex-col gap-2 w-56"
                                                     }`}
-                                            >                                                {route.children.map((child) => (
-                                                <li key={child.id}>
-                                                    <Link
-                                                        href={child.path}
-                                                        className="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white text-gray-800 text-sm font-normal"
-                                                    >
-                                                        {child.name}
-                                                    </Link>
-                                                </li>
-                                            ))}
+                                            >
+                                                {route.children.map((child) => (
+                                                    <li key={child.id}>
+                                                        <Link
+                                                            href={child.path}
+                                                            className={`block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white text-gray-800 text-sm font-normal relative ${pathname === child.path
+                                                                ? "after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[#ff7f50]"
+                                                                : ""
+                                                                }`}
+                                                        >
+                                                            {child.name}
+                                                        </Link>
+                                                    </li>
+                                                ))}
                                             </ul>
                                         )}
                                     </li>
@@ -110,7 +112,7 @@ const Navbar = () => {
                         </div>
 
                         <div className="lg:flex hidden">
-                            <Link href="/pages/solution#contact" scroll={true}>
+                            <Link href="/pages/about/#contact" scroll={true}>
                                 <button className="flex items-center gap-4 p-4 rounded-full font-semibold bg-[#084972]  text-white">
                                     Let&apos;s Talk <FiArrowUpRight />
                                 </button>
@@ -133,10 +135,7 @@ const Navbar = () => {
                                     height={50}
                                     className="rounded-full"
                                 />
-                                <Button
-                                    onClick={closeMobileNav}
-                                    className="bg-white text-black hover:text-white"
-                                >
+                                <Button onClick={closeMobileNav} className="bg-white text-black hover:text-white">
                                     <LiaTimesSolid />
                                 </Button>
                             </div>
@@ -149,19 +148,14 @@ const Navbar = () => {
                                             <div className="flex justify-between items-center">
                                                 <button
                                                     onClick={() =>
-                                                        route.children
-                                                            ? setCurrentNav(route)
-                                                            : closeMobileNav()
+                                                        route.children ? setCurrentNav(route) : closeMobileNav()
                                                     }
                                                     className="text-left w-full"
                                                 >
                                                     <Link href={route.path}>{route.name}</Link>
                                                 </button>
                                                 {route.children && (
-                                                    <button
-                                                        onClick={() => setCurrentNav(route)}
-                                                        className="text-xl px-2"
-                                                    >
+                                                    <button onClick={() => setCurrentNav(route)} className="text-xl px-2">
                                                         <FiArrowUpRight />
                                                     </button>
                                                 )}
@@ -181,11 +175,7 @@ const Navbar = () => {
                                         </li>
                                         {currentNav.children?.map((child) => (
                                             <li key={child.id}>
-                                                <Link
-                                                    href={child.path}
-                                                    onClick={closeMobileNav}
-                                                    className="py-1 ml-2 block"
-                                                >
+                                                <Link href={child.path} onClick={closeMobileNav} className="py-1 ml-2 block">
                                                     {child.name}
                                                 </Link>
                                             </li>
@@ -195,7 +185,7 @@ const Navbar = () => {
                             </ul>
                         </div>
 
-                        <Link href="/pages/solution#contact" scroll={true}>
+                        <Link href="/pages/about#contact" scroll={true} onClick={closeMobileNav}>
                             <button className="flex items-center gap-4 p-4 rounded-full font-semibold bg-[#084972] text-white">
                                 Let&apos;s Talk <FiArrowUpRight />
                             </button>
