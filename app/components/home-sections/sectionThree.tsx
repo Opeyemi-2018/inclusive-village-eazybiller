@@ -31,8 +31,6 @@ const SectionThree = () => {
             title: "IT Infrastructure & Integration",
             features: [
                 "Cloud Services (DevOps)",
-                "E-Channels Integrations",
-                "Point of Sales System",
                 "Data Center Networking Solutions"
             ],
             image: '/images/service-2.jpg',
@@ -44,7 +42,6 @@ const SectionThree = () => {
                 "Security Risk Assessment",
                 "Cybersecurity Strategy & Implementation",
                 "Third (3rd) Party Service Integrations",
-                "Data Center Networking Solutions"
             ],
             image: '/images/service-3.jpg',
             mask: '/images/ser-3.png',

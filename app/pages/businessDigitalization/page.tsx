@@ -10,7 +10,7 @@ const Business = () => {
   return (
     <div className="md:mt-44 mt-32 min-h-screen  bg-white text-gray-800 ">
 
-      <section className="text-center max-w-4xl mx-auto space-y-6 px-3">
+      <section className="text-center  max-w-4xl mx-auto space-y-6 px-3">
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}

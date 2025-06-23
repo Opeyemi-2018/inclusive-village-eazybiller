@@ -1,5 +1,5 @@
-import DepartmentSection from '@/app/components/home-sections/department'
-import SectionFive from '@/app/components/home-sections/sectionFive'
+// import DepartmentSection from '@/app/components/home-sections/department'
+// import SectionFive from '@/app/components/home-sections/sectionFive'
 import SectionFour from '@/app/components/home-sections/sectionFour'
 import SectionOne from '@/app/components/home-sections/sectionOne'
 // import SectionSix from '@/app/components/home-sections/sectionSix'
@@ -14,9 +14,9 @@ const HomePage = () => {
     <SectionTwo/>
     <SectionThree/>
     <SectionFour/>
-    <SectionFive/>
+    {/* <SectionFive/> */}
     {/* <SectionSix/> */}
-    <DepartmentSection/>
+    {/* <DepartmentSection/> */}
     </>
   )
 }

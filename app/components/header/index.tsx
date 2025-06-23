@@ -69,11 +69,17 @@ const Navbar = () => {
 
                                         {route.children && (
                                             <ul
-                                                className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white dark:bg-[#222222] shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-4 ${route.children.length > 4
-                                                    ? "grid grid-cols-2 gap-4 w-[450px]"
-                                                    : "flex flex-col gap-2 w-56"
+                                                className={`absolute top-full left-1/2 -translate-x-1/2 mt-3
+                                                bg-white dark:bg-[#222222] shadow-2xl 
+                                                opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                                                group-hover:translate-y-2 transition-all duration-500 ease-out delay-150 z-50 p-4
+                                                ${route.children.length > 4
+                                                        ? "grid grid-cols-3 gap-3 w-[500px]"
+                                                        : "flex flex-col gap-2 w-56"
                                                     }`}
                                             >
+
+
                                                 {route.children.map((child) => (
                                                     <li key={child.id}>
                                                         <Link
@@ -135,7 +141,10 @@ const Navbar = () => {
                                     height={50}
                                     className="rounded-full"
                                 />
-                                <Button onClick={closeMobileNav} className="bg-white text-black hover:text-white">
+                                <Button
+                                    onClick={closeMobileNav}
+                                    className="bg-white text-black hover:text-white"
+                                >
                                     <LiaTimesSolid />
                                 </Button>
                             </div>
@@ -155,7 +164,10 @@ const Navbar = () => {
                                                     <Link href={route.path}>{route.name}</Link>
                                                 </button>
                                                 {route.children && (
-                                                    <button onClick={() => setCurrentNav(route)} className="text-xl px-2">
+                                                    <button
+                                                        onClick={() => setCurrentNav(route)}
+                                                        className="text-xl px-2"
+                                                    >
                                                         <FiArrowUpRight />
                                                     </button>
                                                 )}
@@ -175,7 +187,11 @@ const Navbar = () => {
                                         </li>
                                         {currentNav.children?.map((child) => (
                                             <li key={child.id}>
-                                                <Link href={child.path} onClick={closeMobileNav} className="py-1 ml-2 block">
+                                                <Link
+                                                    href={child.path}
+                                                    onClick={closeMobileNav}
+                                                    className="py-1 ml-2 block"
+                                                >
                                                     {child.name}
                                                 </Link>
                                             </li>

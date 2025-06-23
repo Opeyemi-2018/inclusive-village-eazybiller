@@ -1,4 +1,4 @@
-import AboutSectionTwo from '@/app/components/about-sections/aboutSectionTwo'
+// import AboutSectionTwo from '@/app/components/about-sections/aboutSectionTwo'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -44,7 +44,7 @@ const page = () => {
                 </div>
             </div>
 
-            <AboutSectionTwo />
+            {/* <AboutSectionTwo /> */}
 
             {/* Third Section */}
             <div className='bg-[#f1f2f2] md:py-20 py-10 md:px-16 flex flex-col lg:flex-row md:items-center gap-10 px-3'>
