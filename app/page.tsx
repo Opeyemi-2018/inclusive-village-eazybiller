@@ -1,12 +1,9 @@
-import React from 'react'
-import HomePage from './pages/home/page'
-// import ThemeSwitcher from './components/theme'
+
 
 const page = () => {
   return (
     <div>
-      <HomePage />
-      {/* <ThemeSwitcher/> */}
+      <h1>home page</h1>
     </div>
   )
 }
