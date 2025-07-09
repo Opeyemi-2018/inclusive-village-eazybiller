@@ -1,9 +1,12 @@
+import HomeSectionOne from "./components/home-sections/HomeSectionOne"
+import HomeSectionTwo from "./components/home-sections/HomeSectionTwo"
 
 
 const page = () => {
   return (
     <div>
-      <h1>this is the easy biller</h1>
+      <HomeSectionOne />
+      <HomeSectionTwo />
     </div>
   )
 }
