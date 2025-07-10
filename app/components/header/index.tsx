@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+// import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { LiaTimesSolid } from "react-icons/lia";
 
@@ -37,16 +37,16 @@ const Header = () => {
                             </button>
                         </SheetTrigger>
                         <SheetContent side="right" className="w-[250px] p-6">
-                            {/* <SheetHeader>
-                                <SheetTitle className="text-xl font-bold">Menu</SheetTitle>
-                            </SheetHeader> */}
+                            <SheetHeader>
+                                <SheetTitle className="font-semibold text-2xl">EAZYBILLER</SheetTitle>
+                            </SheetHeader>
 
                             <nav className="flex flex-col justify-center items-center gap-6 text-[18px] mt-6">
                                 <Link href="/" onClick={() => setOpen(false)}>Home</Link>
                                 <Link href="/" onClick={() => setOpen(false)}>About</Link>
                                 <Link href="/" onClick={() => setOpen(false)}>Pricing</Link>
                                 <Link href="/" onClick={() => setOpen(false)}>Contact</Link>
-                                <Button className="mt-4 w-full rounded-full">Request Demo</Button>
+                                <Link href="/" className="mt-4 w-full bg-orange-600 text-black p-2 text-center rounded-full">Request Demo</Link>
                             </nav>
                         </SheetContent>
 

@@ -1,24 +1,26 @@
 import Image from 'next/image'
-import React from 'react'
+import { FaStar } from "react-icons/fa";
 
 const HomeSectionTwo = () => {
     return (
-        <section className='pt-32'>
-            <div className='max-w-[40rem] mx-auto space-y-5 flex items-center flex-col text-center justify-center'>
-                <span className='text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block'>
+        <section className='py-32 px-3 md:px-5'>
+            <div className='max-w-[40rem] mx-auto space-y-5 flex lg:items-center flex-col lg:text-center'>
+                <span className='text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit'>
                     Why Choose Finora
-                </span>                <h1 className='text-[40px] md:text-[50px] font-bold leading-tight'>Your path to smarter Financial success
+                </span>
+
+                <h1 className='text-[40px]  md:text-[50px] font-bold leading-tight'>Your path to smarter Financial success
                 </h1>
-                <p className='text-[18px] md:text-[20px] text-gray-500'>Finora simplifies finances with easy tracking, budgeting, and personalized insights, helping users achieve financial goals.
+                <p className='text-[18px]  md:text-[20px] text-gray-500'>Finora simplifies finances with easy tracking, budgeting, and personalized insights, helping users achieve financial goals.
                 </p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-12 bg-white">
+            <div className="flex flex-col lg:flex-row gap-6 pt-12 bg-white">
                 <div className="relative bg-gray-50 w-full lg:w-[45%]   p-6 rounded-2xl flex items-center justify-center">
-                   
-                   
-                   
-                     {/* <Image
+
+
+
+                    {/* <Image
                         src="/biller-1.jpg"
                         alt="Happy user" width={200} height={200}
                         className="w-48 md:w-60 z-10"
@@ -50,9 +52,12 @@ const HomeSectionTwo = () => {
 
                 {/* Middle: Text Content */}
                 <div className="flex-1 bg-orange-200 rounded-2xl p-6 w-full lg:w-[30%]  flex flex-col gap-28 justify-between">
-                    <h2 className="text-2xl font-semibold ">
-                        Optimize your spending with smart, AI-powered financial insights
-                    </h2>
+                    <div className='space-y-3 text-orange-600'>
+                        <FaStar size={30} />
+                        <h2 className="text-2xl font-semibold ">
+                            Optimize your spending with smart, AI-powered financial insights
+                        </h2>
+                    </div>
                     <div >
                         <p className="text-gray-700 text-[18px]">
                             Automated Expense Tracking <br />
