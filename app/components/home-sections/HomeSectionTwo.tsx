@@ -70,11 +70,11 @@ const HomeSectionTwo = () => {
                 </div>
 
                 {/* Right: Card Image */}
-                <div className=" bg-white rounded-2xl overflow-hidden shadow-md w-full lg:w-[25%] flex flex-col gap-28 justify-between">
+                <div className="bg-white rounded-2xl overflow-hidden shadow-md w-full lg:w-[25%] flex flex-col gap-28 justify-between">
                     <Image
                         src="/wallet.avif"
                         alt="Wallet with card" width={200} height={200}
-                        className="w-full h-48 object-cover"
+                        className="w-full h-[20rem] object-cover rounded-lg"
                     />
                     <p className="text-[20px] font-semibold p-5">
                         Secure Payments, <br /> Anytime, Anywhere

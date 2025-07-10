@@ -9,7 +9,7 @@ const HomeSectionOne = () => {
     const marqueeRef = useRef<HTMLDivElement>(null);
 
     const clientLogos = Array(10).fill("/sayswitch-no-bg.png");
-    const logos = [...clientLogos, ...clientLogos]; 
+    const logos = [...clientLogos, ...clientLogos];
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -17,7 +17,7 @@ const HomeSectionOne = () => {
             if (!marquee) return;
 
             gsap.to(marquee, {
-                x: "-50%", 
+                x: "-50%",
                 duration: 40,
                 ease: "linear",
                 repeat: -1,
@@ -54,45 +54,49 @@ const HomeSectionOne = () => {
                 </div>
 
                 {/* IMAGE SIDE */}
-                <div className="w-full lg:w-[50%] flex gap-6 relative mt-16 lg:mt-0">
+                <div className="w-full lg:w-[50%] flex flex-col-reverse lg:flex-row gap-6 relative mt-16 lg:mt-0">
                     {/* Top Left Dash - only on desktop */}
-                    <div className="hidden lg:flex items-end w-full">
-                        <Image
-                            src="/dash-1.svg"
-                            alt="dash"
-                            width={400}
-                            height={200}
-                            className="rounded-xl w-full h-[15rem] object-contain shadow-2xl"
-                        />
-                    </div>
-
-                    {/* Absolute Positioned Dash - only on lg+ */}
-                    <div className="hidden lg:block absolute left-[30%] top-[20%] z-10">
-                        <Image
-                            src="/dash-1.svg"
-                            alt="dash overlay"
-                            width={400}
-                            height={200}
-                            className="rounded-xl w-full h-[7rem] object-contain shadow-2xl max-w-[20rem]"
-                        />
+                    <div className="lg:flex flex-col gap-5 items-end justify-end">
+                        <div className="-mr-10 lg:inline hidden z-10">
+                            <Image
+                                src="/dash-3.svg"
+                                alt="dash overlay"
+                                width={500}
+                                height={200}
+                                className="rounded-xl w-full h-[7rem]  shadow-2xl max-w-[20rem]"
+                            />
+                        </div>
+                        <div className="w-full h-auto">
+                            <Image
+                                src="/dash-2.svg"
+                                alt="dash"
+                                width={700}
+                                height={200}
+                                className="rounded-xl  shadow-2xl"
+                            />
+                        </div>
                     </div>
 
                     {/* Biller and bottom dash - always visible */}
                     <div className="flex flex-col gap-4 items-center w-full">
-                        <Image
-                            src="/biller-1.jpg"
-                            alt="biller"
-                            width={200}
-                            height={400}
-                            className="rounded-xl w-full h-[20rem] object-cover"
-                        />
-                        <Image
-                            src="/dash-1.svg"
-                            alt="dash bottom"
-                            width={400}
-                            height={200}
-                            className="rounded-xl w-full h-[7rem] object-contain shadow-2xl"
-                        />
+                        <div>
+                            <Image
+                                src="/biller-1.jpg"
+                                alt="biller"
+                                width={200}
+                                height={400}
+                                className="rounded-xl w-full h-[20rem] object-cover"
+                            />
+                        </div>
+                        <div className="w-full ">
+                            <Image
+                                src="/dash-3.svg"
+                                alt="dash bottom"
+                                width={400}
+                                height={200}
+                                className="rounded-xl w-full object-cover h-[7rem]  shadow-2xl"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
