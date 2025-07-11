@@ -1,5 +1,6 @@
 'use client'
-
+import { FaChevronDown } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -7,6 +8,10 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { LiaTimesSolid } from "react-icons/lia";
 
 const Header = () => {
+    const pathname = usePathname();
+
+    const shouldShowDefaultBg = !["/contact", "/faq", "/integration"].includes(pathname);
+
     const [open, setOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
     const [isScrolledDown, setIsScrolledDown] = useState(false);
@@ -47,17 +52,43 @@ const Header = () => {
     return (
         <header
             className={`fixed w-full z-50 transition-all duration-300 ease-in-out
-                ${isVisible ? 'translate-y-0' : '-translate-y-full'}
-                ${isScrolledDown ? 'bg-white shadow-md py-4' : 'bg-[#faf7f2] py-5'}`}
+            ${isVisible ? 'translate-y-0' : '-translate-y-full'}
+            ${isScrolledDown
+                    ? 'bg-white py-4'
+                    : shouldShowDefaultBg
+                        ? 'bg-[#faf7f2] py-5'
+                        : 'py-5'
+                }`}
         >
+
             <div className="px-3 md:px-5 flex items-center justify-between">
                 <Link href="/" className="font-semibold text-2xl">EAZYBILLER</Link>
 
-                <nav className={`lg:flex items-center gap-10 text-[18px] hidden ${isScrolledDown ? "bg-transparent" : "bg-white shadow-xl"}   p-3 rounded-lg`}>
+                <nav className={`lg:flex items-center gap-10 text-[18px] hidden ${isScrolledDown ? "bg-transparent" : "bg-white"}   p-3 rounded-lg`}>
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
-                    <Link href="/">Pricing</Link>
-                    <Link href="/">Contact</Link>
+                    <Link href="/pricing">Pricing</Link>
+                    <div className="relative group">
+                        <div className="cursor-pointer flex items-center gap-2">
+                            Pages
+                            <span className="transition-transform duration-300 transform group-hover:rotate-180">
+                                <FaChevronDown size={14} />
+                            </span>
+                        </div>
+
+                        <div
+                            className="absolute top-full left-0 w-40 p-3 bg-white shadow-xl rounded-md opacity-0 translate-y-1 pointer-events-none 
+                            group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto 
+                            transition-all duration-300 z-50 flex flex-col"
+                        >
+                            <Link href="/integration" className="py-2 px-4 hover:bg-gray-100 hover:text-orange-600">Integration</Link>
+                            <Link href="/contact" className="py-2 px-4 hover:bg-gray-100 hover:text-orange-600">Contact Us</Link>
+                            <Link href="/faq" className="py-2 px-4 hover:bg-gray-100 hover:text-orange-600">FAQ</Link>
+                        </div>
+                    </div>
+
+
+
                 </nav>
 
                 <div className="flex items-center gap-5">
@@ -84,8 +115,20 @@ const Header = () => {
                             <nav className="flex flex-col justify-center items-center gap-6 text-[18px] mt-6">
                                 <Link href="/" onClick={() => setOpen(false)}>Home</Link>
                                 <Link href="/about" onClick={() => setOpen(false)}>About</Link>
-                                <Link href="/" onClick={() => setOpen(false)}>Pricing</Link>
-                                <Link href="/" onClick={() => setOpen(false)}>Contact</Link>
+                                <Link href="/pricing" onClick={() => setOpen(false)}>Pricing</Link>
+                                <div className="w-full">
+                                    <details className="group">
+                                        <summary className="flex gap-2 justify-center items-center cursor-pointer py-2 text-[18px]">
+                                            <span>Pages</span>
+                                            <FaChevronDown className="transition-transform duration-300 group-open:rotate-180" />
+                                        </summary>
+                                        <div className="mt-2 pl-4 space-y-2">
+                                            <Link href="/integration" onClick={() => setOpen(false)} className="block">Integration</Link>
+                                            <Link href="/contact" onClick={() => setOpen(false)} className="block">Contact Us</Link>
+                                            <Link href="/faq" onClick={() => setOpen(false)} className="block">FAQ</Link>
+                                        </div>
+                                    </details>
+                                </div>
                                 <Link href="/" className="mt-4 w-full bg-orange-600 text-black p-2 text-center rounded-full">Request Demo</Link>
                             </nav>
                         </SheetContent>
