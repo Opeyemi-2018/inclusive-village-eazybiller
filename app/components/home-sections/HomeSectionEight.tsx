@@ -75,7 +75,7 @@ const HomeSectionEight = () => {
             </div>
 
             {/* DESKTOP VIEW: Show one at a time with arrows */}
-            <div className="hidden md:flex flex-col items-center text-center relative mt-24">
+            <div className="hidden md:flex flex-col items-center text-center relative mt-24 mx-auto max-w-[80rem]">
                 <BiSolidQuoteAltRight className="text-[8rem] text-gray-800 pb-8" />
                 <p className="text-[22px] text-gray-700 max-w-3xl">
                     {testimonials[index].quote}

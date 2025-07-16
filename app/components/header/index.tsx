@@ -61,7 +61,7 @@ const Header = () => {
                 }`}
         >
 
-            <div className="px-3 md:px-5 flex items-center justify-between">
+            <div className="px-3 md:px-5 flex items-center justify-between mx-auto max-w-[80rem]">
                 <Link href="/" className="font-semibold text-2xl">EAZYBILLER</Link>
 
                 <nav className={`lg:flex items-center gap-10 text-[18px] hidden ${isScrolledDown ? "bg-transparent" : "bg-white"}   p-3 rounded-lg`}>

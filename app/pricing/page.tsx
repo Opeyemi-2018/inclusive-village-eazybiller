@@ -46,10 +46,10 @@ const Pricing = () => {
         )
 
     return (
-        <div className="pt-20">
+        <section className="pt-20">
             <HomeSectionSeven />
 
-            <section className="py-32 px-3 md:px-5">
+            <div className="py-32 px-3 md:px-5 mx-auto max-w-[80rem]">
                 <div className="max-w-[40rem] mx-auto space-y-5 flex lg:items-center flex-col lg:text-center">
                     <span className="text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit">
                         Our Pricing
@@ -127,8 +127,8 @@ const Pricing = () => {
                         </div>
                     ))}
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     )
 }
 

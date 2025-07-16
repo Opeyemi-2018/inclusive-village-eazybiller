@@ -3,7 +3,7 @@ import Image from 'next/image'
 const HomeSectionFive = () => {
     return (
         <section className='py-32 px-3 md:px-5 bg-[#faf7f2]'>
-            <div className="flex gap-6 flex-wrap lg:flex-nowrap">
+            <div className="flex gap-6 flex-wrap lg:flex-nowrap mx-auto max-w-[80rem]">
                 <div className='flex flex-col gap-6'>
                     <div className='max-w-[47rem] mx-auto space-y-5 inline lg:hidden'>
                         <span className='text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block'>

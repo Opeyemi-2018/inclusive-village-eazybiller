@@ -15,39 +15,9 @@ const HomeSectionTwo = () => {
                 </p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-6 pt-12 bg-white">
+            <div className="flex flex-col lg:flex-row gap-6 pt-12 bg-white mx-auto max-w-[80rem]">
                 <div className="relative bg-gray-50 w-full lg:w-[45%]   p-6 rounded-2xl flex items-center justify-center">
 
-
-
-                    {/* <Image
-                        src="/biller-1.jpg"
-                        alt="Happy user" width={200} height={200}
-                        className="w-48 md:w-60 z-10"
-                    />
-
-                    <div className="absolute top-6 right-6 bg-white shadow-md rounded-xl p-4">
-                        <h4 className="text-sm font-medium text-gray-600">Performance</h4>
-                        <div className="flex items-center text-xs gap-2 text-gray-400 mt-1">
-                            <span className="underline">Weekly</span>
-                            <span>Monthly</span>
-                        </div>
-                        <div className="mt-3">
-                            <div className="h-24 w-32 bg-green-100 rounded-xl flex items-end justify-around p-1">
-                                <div className="h-4 w-4 bg-green-400 rounded-sm" />
-                                <div className="h-10 w-4 bg-green-400 rounded-sm" />
-                                <div className="h-16 w-4 bg-green-500 rounded-sm" />
-                                <div className="h-20 w-4 bg-green-600 rounded-sm" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="absolute bottom-6 left-6 bg-white shadow-md flex items-center gap-2 p-3 rounded-lg">
-                        <div>
-                            <p className="text-sm text-gray-500">Total Earning</p>
-                            <p className="font-semibold text-green-600 text-lg">$240,000.80</p>
-                        </div>
-                    </div> */}
                 </div>
 
                 {/* Middle: Text Content */}

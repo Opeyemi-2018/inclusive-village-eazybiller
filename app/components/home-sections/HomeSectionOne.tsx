@@ -29,15 +29,14 @@ const HomeSectionOne = () => {
 
     return (
         <div className="px-3 md:px-5 pt-32 lg:pt-56 pb-20 space-y-20 bg-[#faf7f2]">
-            {/* === MAIN HERO SECTION === */}
-            <div className="gap-0 lg:gap-20 flex flex-wrap lg:flex-nowrap">
+            <div className="gap-0 lg:gap-20 flex flex-col md:flex-row mx-auto max-w-[80rem]">
                 {/* TEXT SIDE */}
-                <div className="w-full lg:w-[50%] space-y-10">
-                    <h1 className="text-[40px] md:text-[56px] font-bold leading-tight">
-                        Achieve Financial Success with AI Powered Insights
+                <div className="space-y-10 w-full md:w-1/2">
+                    <h1 className="text-[30px] md:text-[56px] font-bold leading-tight">
+                        Complete Financial Operations
                     </h1>
-                    <p className="text-[18px] md:text-[21px]">
-                        Leverage AI for smarter financial decisions with real-time insights and personalized investment strategies.
+                    <p className="text-[16px] md:text-[21px]">
+                        Suite for Modern Businesses
                     </p>
                     <div className="flex flex-wrap gap-6">
                         <button className="rounded-full px-5 py-4 border border-orange-600 text-[#0b0b0b] text-[18px] flex items-center gap-3">
@@ -54,16 +53,16 @@ const HomeSectionOne = () => {
                 </div>
 
                 {/* IMAGE SIDE */}
-                <div className="w-full lg:w-[50%] flex flex-col-reverse lg:flex-row gap-6 relative mt-16 lg:mt-0">
+                <div className="flex flex-col-reverse md:flex-row gap-6 w-full md:w-1/2 relative mt-16 md:mt-0">
                     {/* Top Left Dash - only on desktop */}
-                    <div className="lg:flex flex-col gap-5 items-end justify-end">
-                        <div className="-mr-10 lg:inline hidden z-10">
+                    <div className="md:flex flex-col gap-5 items-end justify-end w-full hidden">
+                        <div className="-mr-10 z-10">
                             <Image
                                 src="/dash-3.svg"
                                 alt="dash overlay"
                                 width={500}
                                 height={200}
-                                className="rounded-xl w-full h-[7rem]  shadow-2xl max-w-[20rem]"
+                                className="rounded-xl w-full h-[7rem] shadow-2xl max-w-[20rem]"
                             />
                         </div>
                         <div className="w-full h-auto">
@@ -72,14 +71,14 @@ const HomeSectionOne = () => {
                                 alt="dash"
                                 width={700}
                                 height={200}
-                                className="rounded-xl  shadow-2xl"
+                                className="rounded-xl shadow-2xl"
                             />
                         </div>
                     </div>
 
                     {/* Biller and bottom dash - always visible */}
                     <div className="flex flex-col gap-4 items-center w-full">
-                        <div>
+                        <div className="w-full">
                             <Image
                                 src="/biller-1.jpg"
                                 alt="biller"
@@ -88,13 +87,13 @@ const HomeSectionOne = () => {
                                 className="rounded-xl w-full h-[20rem] object-cover"
                             />
                         </div>
-                        <div className="w-full ">
+                        <div className="w-full">
                             <Image
                                 src="/dash-3.svg"
                                 alt="dash bottom"
                                 width={400}
                                 height={200}
-                                className="rounded-xl w-full object-cover h-[7rem]  shadow-2xl"
+                                className="rounded-xl w-full object-cover h-[7rem] shadow-2xl"
                             />
                         </div>
                     </div>
@@ -102,7 +101,7 @@ const HomeSectionOne = () => {
             </div>
 
             {/* === LOGO MARQUEE === */}
-            <div className="overflow-hidden">
+            <div className="overflow-hidden mx-auto max-w-[80rem]">
                 <div
                     ref={marqueeRef}
                     className="whitespace-nowrap flex items-center gap-20 w-max"

@@ -4,7 +4,7 @@ import { RiTwitterXLine } from "react-icons/ri";
 const Footer = () => {
     return (
         <section className='pt-32 pb-20 px-3 md:px-5 bg-[#faf7f2] font-sans'>
-            <div className='flex flex-wrap lg:flex-nowrap lg:gap-0 gap-10 justify-between'>
+            <div className='flex flex-wrap lg:flex-nowrap lg:gap-0 gap-10 justify-between mx-auto max-w-[80rem]'>
                 <div className='space-y-6 w-full lg:w-[30%]'>
                     <div className='space-y-3'>
                         <h1 className="font-semibold text-2xl">EAZYBILLER</h1>
@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
             <span className='w-full h-[1px] bg-gray-300 mt-24 inline-block'></span>
 
-            <div className='flex flex-col-reverse md:flex-row justify-between md:gap-0 gap-8 mt-20 md:items-center'>
+            <div className='flex flex-col-reverse md:flex-row justify-between md:gap-0 gap-8 mt-20 md:items-center mx-auto max-w-[80rem]'>
                 <p className='text-[18px] text-gray-800'>© Copyright {new Date().getFullYear()}, All Rights Reserved by UiMile - Powered by framer</p>
                 <div className='flex gap-6 items-center'>
                     <Link href={'/'} className='bg-white rounded-full p-2'><RiTwitterXLine /></Link>

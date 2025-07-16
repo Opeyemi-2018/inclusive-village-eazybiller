@@ -30,8 +30,8 @@ const AboutSectionOne = () => {
                 <span className='text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit'>
                     About Us
                 </span>
-                <h1 className='text-[40px]  md:text-[50px] font-bold leading-tight'> About Finora</h1>
-                <p className='text-[18px]  md:text-[20px] text-gray-500'>Finora empowers you with smart tools to budget, save, and plan effortlessly. Simplify your finances and take control with confidence. </p>
+                <h1 className='text-[40px]  md:text-[50px] font-bold leading-tight'> About Eazy Biller</h1>
+                <p className='text-[18px]  md:text-[20px] text-gray-500'>Eazy Biller is a next-generation, all-in-one financial management platform that transforms how businesses, freelancers, and enterprises handle invoicing, payment collection, and financial automation.</p>
             </div>
 
             <div className="max-w-[60rem] mx-auto pt-16">

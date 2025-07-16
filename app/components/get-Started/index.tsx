@@ -4,7 +4,7 @@ import Image from 'next/image'
 const GetStarted = () => {
     return (
         <section className=" px-3 md:px-5">
-            <div className='flex flex-wrap lg:flex-nowrap  justify-between'>
+            <div className='flex flex-wrap lg:flex-nowrap  justify-between mx-auto max-w-[80rem]'>
                 <div className="max-w-[35rem] pt-32 space-y-5 flex flex-col">
                     <div className='max-w-[47rem] mx-auto space-y-5 '>
                         <span className='text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block'>

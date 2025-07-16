@@ -42,7 +42,7 @@ const Integration = () => {
     const visibleItems = showAll ? integrations : integrations.slice(0, 3);
 
     return (
-        <section className="p-32 px-3 md:px-5">
+        <section className="p-32 px-3 md:px-5 ">
             <div className="max-w-[60rem] mx-auto pt-16 space-y-5 flex lg:items-center flex-col lg:text-center">
                 <span className="text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit">
                     Integration
@@ -55,7 +55,7 @@ const Integration = () => {
                 </p>
             </div>
 
-            <div className=" pt-12">
+            <div className=" pt-12 mx-auto max-w-[80rem]">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {visibleItems.map((item, index) => (
                         <div key={index} className="relative bg-gray-50 space-y-6 p-6 rounded-2xl">

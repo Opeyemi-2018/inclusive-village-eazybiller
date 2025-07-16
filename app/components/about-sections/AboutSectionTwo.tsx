@@ -8,8 +8,8 @@ const AboutSectionTwo = () => {
                     <span className='text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit'>
                         Our Mission
                     </span>
-                    <h1 className='text-[40px]  md:text-[50px] font-bold leading-tight'> Empowering you to take full control of your finances</h1>
-                    <p className='text-[18px]  md:text-[20px] text-gray-500'>At Finora, we make financial freedom accessible with smart, intuitive tools for budgeting, saving, and planning. Manage your money effortlessly and simplify your financial journey.</p>
+                    <h1 className='text-[40px]  md:text-[50px] font-bold leading-tight'> From sleek invoice creation to global payment integration.</h1>
+                    <p className='text-[18px]  md:text-[20px] text-gray-500'>  Eazy Biller empowers your organization to simplify complex workflows, improve cash flow, and deliver a modern billing experience—securely and at scale.</p>
                 </div>
                 <div className=" flex flex-col-reverse flex-1 lg:flex-row gap-6 relative mt-16 lg:mt-0">
                     {/* Top Left Dash - only on desktop */}

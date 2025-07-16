@@ -11,7 +11,7 @@ const HomeSectionThree = () => {
                 <p className='text-[18px] md:text-[20px] text-gray-500'> Effortlessly manage finances smarter with AI insights, secure transactions, and seamless control, ensuring peace of mind and financial growth. </p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-6 pt-12">
+            <div className="flex flex-col lg:flex-row gap-6 pt-12 mx-auto max-w-[80rem]">
                 <div className="relative bg-white    p-6 rounded-2xl ">
                     <Image src={'/ring.svg'} alt='ring' width={700} height={700} />
                     <div className='space-y-2'>

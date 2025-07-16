@@ -7,7 +7,7 @@ const Contact = () => {
 
     return (
         <section className="p-32 px-3 md:px-5 bg-[#faf7f2]">
-            <div className="flex flex-col lg:flex-row items-center gap-6 pt-16">
+            <div className="flex flex-col lg:flex-row max-w-[80rem] mx-auto items-center gap-6 pt-16">
                 <div className="h-[40rem]  space-y-5 flex flex-col bg-white rounded-xl lg:p-12 p-6 flex-1">
                     <span className="text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit">
                         Contact us

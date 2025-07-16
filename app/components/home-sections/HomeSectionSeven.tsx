@@ -58,7 +58,7 @@ const pricingPlans = [
 const HomeSectionSeven = () => {
     return (
         <section className='py-32 px-3 md:px-5 bg-[#faf7f2]'>
-            <div className='max-w-[47rem] space-y-5 flex flex-col'>
+            <div className='max-w-[80rem] mx-auto space-y-5 flex flex-col'>
                 <span className='text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit'>
                     Key Features
                 </span>
@@ -66,7 +66,7 @@ const HomeSectionSeven = () => {
                 <p className='text-[18px] md:text-[20px] text-gray-500'>Choose a plan that perfectly fits your unique goals and budget.</p>
             </div>
 
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 md:gap-6 gap-8 pt-12">
+            <div className="mx-auto max-w-[80rem] grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 md:gap-6 gap-8 pt-12">
                 {pricingPlans.map((plan, index) => (
                     <div
                         key={index}

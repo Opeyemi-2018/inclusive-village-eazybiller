@@ -38,7 +38,7 @@ const HomeSectionSix = () => {
                 ))}
             </div>
 
-            <div className="pt-16 flex items-center justify-center">
+            <div className="pt-16 flex items-center justify-center ">
                 <button className="rounded-full pl-5 pr-2 py-2 bg-orange-600 text-[#0b0b0b] text-[18px] flex items-center gap-3">
                     Try for free
                     <span className="bg-white p-2 rounded-full">
