@@ -4,6 +4,7 @@ import AboutSectionTwo from '../components/about-sections/AboutSectionTwo'
 import AboutSectionThree from '../components/about-sections/AboutSectionThree'
 import AboutSectionFour from '../components/about-sections/AboutSectionFour'
 import AboutSectionFive from '../components/about-sections/AboutSectionFive'
+import AboutSectionSix from '../components/about-sections/AboutSectionSix'
 
 const About = () => {
     return (
@@ -13,6 +14,7 @@ const About = () => {
             <AboutSectionThree />
             <AboutSectionFour />
             <AboutSectionFive />
+            <AboutSectionSix />
         </div>
     )
 }

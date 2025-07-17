@@ -10,7 +10,7 @@ import { LiaTimesSolid } from "react-icons/lia";
 const Header = () => {
     const pathname = usePathname();
 
-    const shouldShowDefaultBg = !["/contact", "/faq", "/integration"].includes(pathname);
+    const shouldShowDefaultBg = !["/contact", "/faq", "/transaction"].includes(pathname);
 
     const [open, setOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
@@ -67,7 +67,7 @@ const Header = () => {
                 <nav className={`lg:flex items-center gap-10 text-[18px] hidden ${isScrolledDown ? "bg-transparent" : "bg-white"}   p-3 rounded-lg`}>
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
-                    <Link href="/pricing">Pricing</Link>
+                    <Link href="/payment">Payment</Link>
                     <div className="relative group">
                         <div className="cursor-pointer flex items-center gap-2">
                             Pages
@@ -81,7 +81,7 @@ const Header = () => {
                             group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto 
                             transition-all duration-300 z-50 flex flex-col"
                         >
-                            <Link href="/integration" className="py-2 px-4 hover:bg-gray-100 hover:text-orange-600">Integration</Link>
+                            <Link href="/transaction" className="py-2 px-4 hover:bg-gray-100 hover:text-orange-600">Transaction</Link>
                             <Link href="/contact" className="py-2 px-4 hover:bg-gray-100 hover:text-orange-600">Contact Us</Link>
                             <Link href="/faq" className="py-2 px-4 hover:bg-gray-100 hover:text-orange-600">FAQ</Link>
                         </div>
@@ -115,7 +115,7 @@ const Header = () => {
                             <nav className="flex flex-col justify-center items-center gap-6 text-[18px] mt-6">
                                 <Link href="/" onClick={() => setOpen(false)}>Home</Link>
                                 <Link href="/about" onClick={() => setOpen(false)}>About</Link>
-                                <Link href="/pricing" onClick={() => setOpen(false)}>Pricing</Link>
+                                <Link href="/payment" onClick={() => setOpen(false)}>Payment</Link>
                                 <div className="w-full">
                                     <details className="group">
                                         <summary className="flex gap-2 justify-center items-center cursor-pointer py-2 text-[18px]">
@@ -123,7 +123,7 @@ const Header = () => {
                                             <FaChevronDown className="transition-transform duration-300 group-open:rotate-180" />
                                         </summary>
                                         <div className="mt-2 pl-4 space-y-2">
-                                            <Link href="/integration" onClick={() => setOpen(false)} className="block">Integration</Link>
+                                            <Link href="/transaction" onClick={() => setOpen(false)} className="block">Transaction</Link>
                                             <Link href="/contact" onClick={() => setOpen(false)} className="block">Contact Us</Link>
                                             <Link href="/faq" onClick={() => setOpen(false)} className="block">FAQ</Link>
                                         </div>

@@ -10,8 +10,9 @@ const GetStarted = () => {
                         <span className='text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block'>
                             Get Started
                         </span>
-                        <h1 className='text-[40px] md:text-[50px] font-bold leading-tight'>Secure, reliable, and trusted by thousands</h1>
-                        <p className='text-[18px] md:text-[20px] text-gray-500'> Join thousands who trust us for secure financial management. Your data is protected with top encryption. </p>
+                        <h1 className='text-[40px] md:text-[50px] font-bold leading-tight'>Your Financial Command Center</h1>
+                        <p className='text-[18px] md:text-[20px] text-gray-500'> Eazy Biller is more than just invoicing. It&apos;s your complete financial operations suite—built to support startups and scale with enterprises</p>
+                        <p className='text-[18px] md:text-[20px] text-gray-500'>Whether you&apos;re automating payouts, managing global clients, or delivering frictionless billing, Eazy Biller powers your success</p>
                     </div>
                     <button className="rounded-full pl-5 mt-6 pr-2 w-fit py-2 bg-orange-600 text-[#0b0b0b] text-[18px] flex items-center gap-3">
                         Try for free

@@ -20,28 +20,17 @@ const Footer = () => {
                     <div className='capitalize space-y-4'>
                         <h1 className='text-[22px] font-semibold'>page</h1>
                         <div className='text-[20px]  flex flex-col gap-2'>
-                            <Link href={'/'}>Integration</Link>
-                            <Link href={'/'}>Integration</Link>
-                            <Link href={'/'}>Integration</Link>
-                            <Link href={'/'}>Integration</Link>
+                            <Link href={'/'}>Home</Link>
+                            <Link href={'/about'}>About</Link>
+                            <Link href={'/payment'}>Payment</Link>
+                            <Link href={'transaction/'}>Transaction</Link>
                         </div>
                     </div>
                     <div className='capitalize space-y-4'>
                         <h1 className='text-[22px] font-semibold'>page</h1>
                         <div className='text-[20px]  flex flex-col gap-2'>
-                            <Link href={'/'}>Integration</Link>
-                            <Link href={'/'}>Integration</Link>
-                            <Link href={'/'}>Integration</Link>
-                            <Link href={'/'}>Integration</Link>
-                        </div>
-                    </div>
-                    <div className='capitalize space-y-4'>
-                        <h1 className='text-[22px] font-semibold'>page</h1>
-                        <div className='text-[20px]  flex flex-col gap-2'>
-                            <Link href={'/'}>Integration</Link>
-                            <Link href={'/'}>Integration</Link>
-                            <Link href={'/'}>Integration</Link>
-                            <Link href={'/'}>Integration</Link>
+                            <Link href={'/contact'}>Contact</Link>
+                            <Link href={'/faq'}>Faq</Link>
                         </div>
                     </div>
 

@@ -8,7 +8,7 @@ const AboutSectionFive = () => {
                     Key Benefits
                 </span>
                 <h1 className='text-[40px] md:text-[50px] font-bold leading-tight'>Meet the team behind your financial freedom</h1>
-                <p className='text-[18px] md:text-[20px] text-gray-500'> At Finora, our team of experts is dedicated to simplifying your financial journey and helping you achieve financial freedom. </p>
+                <p className='text-[18px] md:text-[20px] text-gray-500'> At Eazy biller, our team of experts is dedicated to simplifying your financial journey and helping you achieve financial freedom. </p>
             </div>
 
             <div className="flex flex-col max-w-[60rem] mx-auto lg:flex-row gap-6 pt-12">

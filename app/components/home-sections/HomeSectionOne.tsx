@@ -36,7 +36,7 @@ const HomeSectionOne = () => {
                         Complete Financial Operations
                     </h1>
                     <p className="text-[16px] md:text-[21px]">
-                        Suite for Modern Businesses
+                        Suite for Modern Businesses, From sleek invoice creation to global payment integration
                     </p>
                     <div className="flex flex-wrap gap-6">
                         <button className="rounded-full px-5 py-4 border border-orange-600 text-[#0b0b0b] text-[18px] flex items-center gap-3">
