@@ -22,11 +22,9 @@ const Header = () => {
             const currentScrollY = window.scrollY;
 
             if (currentScrollY > lastScrollY) {
-                // Scrolling down
                 setIsVisible(false);
                 setIsScrolledDown(true);
             } else {
-                // Scrolling up
                 setIsVisible(true);
                 setIsScrolledDown(false);
             }
@@ -51,7 +49,7 @@ const Header = () => {
 
     return (
         <header
-            className={`fixed w-full z-50 transition-all duration-300 ease-in-out
+            className={`fixed  px-3 md:px-5 w-full z-50 transition-all duration-300 ease-in-out
             ${isVisible ? 'translate-y-0' : '-translate-y-full'}
             ${isScrolledDown
                     ? 'bg-white py-4'
@@ -61,10 +59,10 @@ const Header = () => {
                 }`}
         >
 
-            <div className="px-3 md:px-5 flex items-center justify-between mx-auto max-w-[80rem]">
+            <div className=" flex items-center justify-between mx-auto max-w-[80rem]">
                 <Link href="/" className="font-semibold text-2xl">EAZYBILLER</Link>
 
-                <nav className={`lg:flex items-center gap-10 text-[18px] hidden ${isScrolledDown ? "bg-transparent" : "bg-white"}   p-3 rounded-lg`}>
+                <nav className={`lg:flex items-center gap-10 text-[18px] hidden ${isScrolledDown ? "bg-transparent" : "bg-white"}   py-[9px] px-[20px] rounded-lg`}>
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
                     <Link href="/payment">Payment</Link>

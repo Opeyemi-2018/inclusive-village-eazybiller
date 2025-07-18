@@ -13,8 +13,8 @@ const Contact = () => {
                         Contact us
                     </span>
                     <h1 className="text-[35px] md:text-[45px] font-bold leading-tight">
-                        Get in touch with finora now today
-                    </h1>
+                        Get in touch with us now today
+                    </h1> 
                     <p className="text-[18px] md:text-[20px] text-gray-500">
                         We’d love to hear from you! Whether you have questions, feedback, or need support, our team is here to help.
                     </p>

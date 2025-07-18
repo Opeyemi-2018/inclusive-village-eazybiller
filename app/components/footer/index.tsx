@@ -3,7 +3,7 @@ import { RiTwitterXLine } from "react-icons/ri";
 
 const Footer = () => {
     return (
-        <section className='pt-32 pb-20 px-3 md:px-5 bg-[#faf7f2] font-sans'>
+        <section className='pt-32 pb-20 px-3 md:px-5 bg-[#faf7f2] mx-auto'>
             <div className='flex flex-wrap lg:flex-nowrap lg:gap-0 gap-10 justify-between mx-auto max-w-[80rem]'>
                 <div className='space-y-6 w-full lg:w-[30%]'>
                     <div className='space-y-3'>
