@@ -46,8 +46,8 @@ const Integration = () => {
             <div className="pt-12 mx-auto max-w-[80rem]">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {items.map((item, index) => (
-                        <div key={index} className="bg-orange-200 space-y-8 p-[30px] rounded-2xl">
-                            <span className="bg-white p-4 rounded-md inline-block">
+                        <div key={index} className="bg-orange-200 space-y-16 p-[30px] rounded-2xl">
+                            <span className="bg-white text-orange-600 p-4 rounded-md inline-block">
                                 {item.icon}
                             </span>
                             <div>

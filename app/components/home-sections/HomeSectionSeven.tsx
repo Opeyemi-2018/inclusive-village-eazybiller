@@ -99,7 +99,7 @@ const HomeSectionSeven = () => {
                         className={`${plan.bgColor} rounded-3xl shadow-md lg:p-[40px] p-[20px] flex flex-col relative`}
                     >
                         {plan.isPopular && (
-                            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-xs p-3 rounded-lg font-semibold">
+                            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-white  px-3 py-2 rounded-lg font-semibold">
                                 Most Popular
                             </span>
                         )}
@@ -118,7 +118,7 @@ const HomeSectionSeven = () => {
                             )}
                         </p>
 
-                        <button className={`${plan.buttonColor} text-[20px] my-2 rounded-full py-[15px] lg:py-[20px] px-[24px] font-semibold`}>
+                        <button className={`${plan.buttonColor} text-[20px] my-2 rounded-full py-[14px] lg:py-[17px] px-[24px] font-semibold`}>
                             {plan.button}
                         </button>
 

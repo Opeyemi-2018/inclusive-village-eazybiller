@@ -11,12 +11,12 @@ const faqsData: Record<string, FAQItem[]> = {
         {
             question: "1. How does your financial tool help manage my money?",
             answer:
-                "Finora is a powerful financial management platform designed to help you track expenses, budget smarter, and grow your wealth effortlessly.",
+                "Eazy biller is a powerful financial management platform designed to help you track expenses, budget smarter, and grow your wealth effortlessly.",
         },
         {
             question: "2. Do I need any financial knowledge to use this?",
             answer:
-                "No, Finora is designed to be user-friendly for everyone regardless of their financial background.",
+                "No, Eazy biller is designed to be user-friendly for everyone regardless of their financial background.",
         },
     ],
     Clients: [

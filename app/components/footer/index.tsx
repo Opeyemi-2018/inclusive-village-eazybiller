@@ -10,8 +10,8 @@ const Footer = () => {
                         <h1 className="font-semibold text-2xl">EAZYBILLER</h1>
                         <p className='text-[20px]'>We simplify finance with tools to help you budget and grow wealth. Take control of your money effortlessly and confidently.</p>
                     </div>
-                    <div className='bg-white rounded-full py-2 w-full flex items-center justify-between shadow-md pl-3 pr-1 '>
-                        <input type="text" placeholder='Email Address' className='border-none' />
+                    <div className='bg-white rounded-full py-2 w-full flex items-center justify-between shadow-md pl-5 pr-1 '>
+                        <input type="text" placeholder='Email Address' className='border-none outline-none mr-4 w-full ' />
                         <button className='py-3 px-3 rounded-full bg-orange-600 w-1/3 font-semibold'>Subscribe</button>
                     </div>
                 </div>

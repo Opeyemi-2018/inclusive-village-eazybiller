@@ -7,7 +7,7 @@ import { BiSolidQuoteAltRight } from "react-icons/bi";
 const testimonials = [
     {
         quote:
-            "Finora simplifies financial planning effortlessly! With AI budgeting, I save 20% more monthly, and the expense tracking keeps my spending in check effectively.",
+            "Eazy biller simplifies financial planning effortlessly! With AI budgeting, I save 20% more monthly, and the expense tracking keeps my spending in check effectively.",
         name: "Rayan Kay",
         role: "Photographer",
         company: "Fintech",
@@ -15,7 +15,7 @@ const testimonials = [
     },
     {
         quote:
-            "Using Finora has changed how I manage money. I'm now much more aware of my spending, and it’s helped me reach savings goals faster.",
+            "Using Eazy biller has changed how I manage money. I'm now much more aware of my spending, and it’s helped me reach savings goals faster.",
         name: "Ada Obi",
         role: "Product Designer",
         company: "Fintech",
@@ -23,7 +23,7 @@ const testimonials = [
     },
     {
         quote:
-            "Smart budgeting and automation made easy! I recommend Finora to anyone who wants to track expenses with zero stress.",
+            "Smart budgeting and automation made easy! I recommend Eazy biller to anyone who wants to track expenses with zero stress.",
         name: "James Olu",
         role: "Developer",
         company: "Fintech",
