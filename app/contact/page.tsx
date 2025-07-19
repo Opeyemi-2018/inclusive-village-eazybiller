@@ -31,7 +31,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className=" h-[40rem] w-full space-y-5 flex flex-col bg-white rounded-xl lg:p-12 p-[60px] flex-1">
+                <div className=" h-[40rem] w-full space-y-5 flex flex-col bg-white rounded-xl p-5 lg:p-[40px]  flex-1">
                     <form action="" className="space-y-6 ">
                         <div className="flex flex-col gap-2 relative">
                             <label className="text-[18px] text-gray-500">Name</label>
