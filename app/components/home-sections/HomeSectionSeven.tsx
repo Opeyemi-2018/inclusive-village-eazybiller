@@ -96,7 +96,7 @@ const HomeSectionSeven = () => {
                 {pricingPlans.map((plan, index) => (
                     <div
                         key={index}
-                        className={`${plan.bgColor} rounded-3xl shadow-md p-[40px] flex flex-col relative`}
+                        className={`${plan.bgColor} rounded-3xl shadow-md lg:p-[40px] p-[20px] flex flex-col relative`}
                     >
                         {plan.isPopular && (
                             <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-xs p-3 rounded-lg font-semibold">
@@ -111,14 +111,14 @@ const HomeSectionSeven = () => {
                             </p>
                         </div>
 
-                        <p className={`text-[40px] font-bold my-7 ${plan.textColor}`}>
+                        <p className={`text-[25px] lg:text-[40px] font-bold my-7 ${plan.textColor}`}>
                             {plan.price}
                             {plan.monthly && (
                                 <span className="text-[24px] font-normal"> {plan.monthly}</span>
                             )}
                         </p>
 
-                        <button className={`${plan.buttonColor} text-[20px] my-2 rounded-full py-[20px] px-[24px] font-semibold`}>
+                        <button className={`${plan.buttonColor} text-[20px] my-2 rounded-full py-[15px] lg:py-[20px] px-[24px] font-semibold`}>
                             {plan.button}
                         </button>
 
