@@ -74,7 +74,7 @@ const HomeSectionOne = () => {
     return (
         <div className="px-3 md:px-5 pt-32 lg:pt-56 pb-20 space-y-20 bg-[#faf7f2]">
             <div className="container mx-auto max-w-[80rem] flex flex-col lg:flex-row gap-10  xl:gap-16 items-center">
-                <div ref={textSectionRef} className="lg:flex-1 space-y-8 lg:space-y-9 flex-1">
+                <div ref={textSectionRef} className="lg:flex-1 space-y-8 lg:space-y-14 flex-1">
                     <h1 className="text-[35px] xl:text-[60px] lg:text-[45px]   capitalize font-bold leading-tight">
                         Complete Financial Operations Suite for Modern Businesses
                     </h1>
@@ -127,7 +127,7 @@ const HomeSectionOne = () => {
                                     alt="biller"
                                     width={600}
                                     height={400}
-                                    className="rounded-xl w-full lg:h-[18rem] h-[25rem] object-cover image-animation-item-biller"
+                                    className="rounded-xl w-full lg:h-[19rem] h-[25rem] object-cover image-animation-item-biller"
                                 />
                             </div>
                             <div className="w-full">
