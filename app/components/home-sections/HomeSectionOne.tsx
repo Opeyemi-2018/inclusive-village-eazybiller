@@ -81,13 +81,13 @@ const HomeSectionOne = () => {
                     <p className="text-[19px] md:text-[22px] leading-tight">
                         Suite for Modern Businesses, From sleek invoice creation to global payment integration.
                     </p>
-                    <div className="flex lg:flex-row flex-col gap-6 md:gap-6 font-semibold">
-                        <button className="rounded-full w-1/2 lg:w-fit px-[40px] py-[16px] border border-orange-600 text-[#0b0b0b] text-base md:text-[18px] flex items-center justify-center gap-2">
+                    <div className="flex lg:flex-row flex-col gap-6 md:gap-6 font-semibold ">
+                        <button className="rounded-full w-[70%] lg:w-fit px-[40px] py-[16px] border border-orange-600 text-[#0b0b0b] text-base md:text-[18px] flex items-center justify-between gap-2">
                             <LiaPlayCircle size={25} className="text-black" />
                             View Demo
                         </button>
 
-                        <button className="rounded-full w-1/2 lg:w-fit pl-6 pr-3 py-[12px] bg-orange-600 text-[#0b0b0b] text-base md:text-[18px] flex items-center justify-between gap-3">
+                        <button className="rounded-full w-[70%] lg:w-fit pl-6 pr-3 py-[12px] bg-orange-600 text-[#0b0b0b] text-base md:text-[18px] flex items-center justify-between gap-3">
                             Try for free
                             <span className="bg-white p-2 rounded-full">
                                 <IoIosArrowRoundForward size={25} className="text-black" />
