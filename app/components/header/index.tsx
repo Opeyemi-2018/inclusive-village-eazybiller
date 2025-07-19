@@ -92,7 +92,6 @@ const Header = () => {
                 <div className="flex items-center gap-5">
                     <button className="rounded-full px-5 py-3 bg-orange-600 text-[#0b0b0b] text-[18px] hidden md:inline"> Request Demo</button>
 
-                    {/* Mobile Menu Toggle */}
                     <Sheet open={open} onOpenChange={setOpen}>
                         <SheetTrigger asChild>
                             <button>
@@ -110,13 +109,13 @@ const Header = () => {
                                 </SheetTitle>
                             </SheetHeader>
 
-                            <nav className="flex flex-col justify-center items-center gap-6 text-[18px] mt-6">
+                            <nav className="flex flex-col   gap-6 text-[18px] mt-6">
                                 <Link href="/" onClick={() => setOpen(false)}>Home</Link>
                                 <Link href="/about" onClick={() => setOpen(false)}>About</Link>
                                 <Link href="/payment" onClick={() => setOpen(false)}>Payment</Link>
                                 <div className="w-full">
                                     <details className="group">
-                                        <summary className="flex gap-2 justify-center items-center cursor-pointer py-2 text-[18px]">
+                                        <summary className="flex gap-2  cursor-pointer py-2 text-[18px]">
                                             <span>Pages</span>
                                             <FaChevronDown className="transition-transform duration-300 group-open:rotate-180" />
                                         </summary>
