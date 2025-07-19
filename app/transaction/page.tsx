@@ -31,8 +31,10 @@ const items = [
 const Integration = () => {
     return (
         <section className="p-32 px-3 md:px-5">
-            <div className="max-w-[60rem] mx-auto pt-16  flex lg:items-center flex-col lg:text-center">
-              
+            <div className="max-w-[40rem] mx-auto pt-16  flex lg:items-center flex-col gap-4 lg:text-center">
+                 <span className="text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit">
+                    Transaction
+                </span>
                 <h1 className="text-[40px] md:text-[50px] font-bold leading-tight">
                     Transaction & Fund Management
                 </h1>
@@ -44,7 +46,7 @@ const Integration = () => {
             <div className="pt-12 mx-auto max-w-[80rem]">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {items.map((item, index) => (
-                        <div key={index} className="bg-orange-200 space-y-8 p-6 rounded-2xl">
+                        <div key={index} className="bg-orange-200 space-y-8 p-[30px] rounded-2xl">
                             <span className="bg-white p-4 rounded-md inline-block">
                                 {item.icon}
                             </span>

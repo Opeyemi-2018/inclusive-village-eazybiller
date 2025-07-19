@@ -14,11 +14,9 @@ const securityAndCompliance = [
 const AboutSectionSix = () => {
     return (
         <section className="mx-auto max-w-[60rem] py-32  px-3 md:px-5">
-            <div className="w-full flex justify-end">
-                <h1 className="md:text-5xl text-3xl mb-20 text-[40px] md:text-[50px] font-bold leading-tight text-right">
+                <h1 className="md:text-5xl text-3xl mb-20 text-center text-[40px] md:text-[50px] font-bold leading-tight">
                     Security & Compliance
                 </h1>
-            </div>
             <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
                 <div className="w-full lg:w-1/2">
                     <Image

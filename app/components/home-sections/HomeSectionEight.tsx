@@ -41,11 +41,11 @@ const HomeSectionEight = () => {
 
     return (
         <section className="py-32 px-3 md:px-5">
-            <div className="max-w-[47rem] mx-auto space-y-5 flex lg:items-center flex-col lg:text-center">
+            <div className="max-w-[47rem] mx-auto space-y-5 flex items-center flex-col text-center">
                 <span className="text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit">
                     Testimonial
                 </span>
-                <h1 className="text-[40px] md:text-[50px] font-bold leading-tight">
+                <h1 className="text-[30px] md:text-[50px] font-bold leading-tight">
                     What are people saying about us right now ?
                 </h1>
             </div>

@@ -74,25 +74,27 @@ const HomeSectionOne = () => {
     return (
         <div className="px-3 md:px-5 pt-32 lg:pt-56 pb-20 space-y-20 bg-[#faf7f2]">
             <div className="container mx-auto max-w-[80rem] flex flex-col lg:flex-row gap-10  xl:gap-16 items-center">
-                <div ref={textSectionRef} className="lg:flex-1 space-y-6 md:space-y-8 lg:space-y-10 flex-1">
+                <div ref={textSectionRef} className="lg:flex-1 space-y-8 lg:space-y-9 flex-1">
                     <h1 className="text-[35px] xl:text-[60px] lg:text-[45px]   capitalize font-bold leading-tight">
                         Complete Financial Operations Suite for Modern Businesses
                     </h1>
-                    <p className="text-[22px] leading-tight">
-                        Suite for Modern Businesses, From sleek invoice creation to global payment integration, Eazy Biller empowers your organization.
+                    <p className="text-[19px] md:text-[22px] leading-tight">
+                        Suite for Modern Businesses, From sleek invoice creation to global payment integration.
                     </p>
-                    <div className="flex flex-wrap gap-4 md:gap-6">
-                        <button className="rounded-full px-5 py-3 md:py-4 border border-orange-600 text-[#0b0b0b] text-base md:text-[18px] flex items-center gap-3">
+                    <div className="flex lg:flex-row flex-col gap-6 md:gap-6 font-semibold">
+                        <button className="rounded-full w-1/2 lg:w-fit px-[40px] py-[16px] border border-orange-600 text-[#0b0b0b] text-base md:text-[18px] flex items-center justify-center gap-2">
                             <LiaPlayCircle size={25} className="text-black" />
                             View Demo
                         </button>
-                        <button className="rounded-full pl-5 pr-2 py-2 md:py-3 bg-orange-600 text-[#0b0b0b] text-base md:text-[18px] flex items-center gap-3">
+
+                        <button className="rounded-full w-1/2 lg:w-fit pl-6 pr-3 py-[12px] bg-orange-600 text-[#0b0b0b] text-base md:text-[18px] flex items-center justify-between gap-3">
                             Try for free
                             <span className="bg-white p-2 rounded-full">
                                 <IoIosArrowRoundForward size={25} className="text-black" />
                             </span>
                         </button>
                     </div>
+
                 </div>
 
                 <div ref={imageSectionRef} className="lg:flex-1 w-full flex-1">
@@ -142,7 +144,7 @@ const HomeSectionOne = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto overflow-hidden">
+            <div className="container pt-16 mx-auto overflow-hidden">
                 <div
                     ref={marqueeRef}
                     className="whitespace-nowrap flex items-center gap-10 md:gap-20 w-max"

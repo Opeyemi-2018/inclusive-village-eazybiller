@@ -7,17 +7,17 @@ const HomeSectionThree = () => {
                 <span className='text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit'>
                     Technologies
                 </span>
-                <h1 className='text-[40px] md:text-[50px] font-bold leading-tight'>Powered by Leading Technologies</h1>
+                <h1 className='text-[30px] md:text-[50px] font-bold leading-tight'>Powered by Leading Technologies</h1>
             </div>
 
             <div className="flex flex-col lg:flex-row gap-6 pt-12 mx-auto max-w-[80rem]">
                 <div className="relative bg-white    p-6 rounded-2xl ">
                     <Image src={'/ring.svg'} alt='ring' width={700} height={700} />
                     <div className='space-y-2'>
-                        <h2 className="text-2xl font-semibold ">
+                        <h2 className="text-[24px] font-semibold ">
                             Flutter
                         </h2>
-                        <p> for unified cross-platform development</p>
+                        <p className='text-[18px]'> for unified cross-platform development</p>
                     </div>
                 </div>
 
@@ -25,10 +25,10 @@ const HomeSectionThree = () => {
                 <div className="relative bg-white    p-6 rounded-2xl ">
                     <Image src={'/ring.svg'} alt='ring' width={700} height={700} />
                     <div className='space-y-2'>
-                        <h2 className="text-2xl font-semibold ">
+                        <h2 className="text-[24px] font-semibold ">
                             Laravel (PHP)
                         </h2>
-                        <p>for secure, scalable backend services</p>
+                        <p className='text-[18px]'>for secure, scalable backend services</p>
                     </div>
                 </div>
 
@@ -36,15 +36,15 @@ const HomeSectionThree = () => {
                 <div className="relative bg-white    p-6 rounded-2xl ">
                     <Image src={'/ring.svg'} alt='ring' width={700} height={700} />
                     <div className='space-y-2'>
-                        <h2 className="text-2xl font-semibold ">
+                        <h2 className="text-[24px] font-semibold ">
                             Native Modules
                         </h2>
-                        <p>for mobile-specific optimization</p>
+                        <p className='text-[18px]'>for mobile-specific optimization</p>
                     </div>
                 </div>
 
                 {/* Right: Card Image */}
-                <div className="relative bg-white    p-6 rounded-2xl ">
+                {/* <div className="relative bg-white    p-6 rounded-2xl ">
                     <Image src={'/ring.svg'} alt='ring' width={700} height={700} />
                     <div className='space-y-2'>
                         <h2 className="text-2xl font-semibold ">
@@ -52,7 +52,7 @@ const HomeSectionThree = () => {
                         </h2>
                         <p>for ultra-fast performance and stability</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )

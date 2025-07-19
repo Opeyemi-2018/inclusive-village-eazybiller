@@ -63,16 +63,16 @@ const HomeSectionNine = () => {
 
     return (
         <section className="py-32 px-3 md:px-5 bg-[#faf7f2]">
-            <div className="max-w-[47rem] mx-auto space-y-5 flex lg:items-center flex-col lg:text-center">
+            <div className="max-w-[47rem] mx-auto space-y-5 flex items-center flex-col text-center">
                 <span className="text-black bg-orange-600 rounded-full px-3 py-2 rotate-[-6deg] inline-block w-fit">
                     FAQ
                 </span>
-                <h1 className="text-[40px] md:text-[50px] font-bold leading-tight">
+                <h1 className="text-[30px] md:text-[50px] font-bold leading-tight">
                     We&apos;re here to answer all your questions
                 </h1>
             </div>
 
-            <div className="max-w-3xl mx-auto pt-12">
+            <div className="max-w-[60rem] mx-auto pt-12">
                 <div className="flex flex-wrap justify-center gap-4 max-w-[30rem] mx-auto mb-8">
                     {categories.map((category) => (
                         <button
@@ -101,7 +101,7 @@ const HomeSectionNine = () => {
                             </button>
 
                             {activeIndex === index && (
-                                <div className="px-6 text-[20px] text-gray-700">{faq.answer}</div>
+                                <div className=" text-[20px] text-gray-700">{faq.answer}</div>
                             )}
                         </div>
                     ))}

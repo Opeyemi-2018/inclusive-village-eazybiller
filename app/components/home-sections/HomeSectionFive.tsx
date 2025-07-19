@@ -1,5 +1,6 @@
 import Image from 'next/image'
-// import { FaStar } from "react-icons/fa";
+import { MdCurrencyExchange } from "react-icons/md";
+import { MdOutlinePayment } from "react-icons/md";
 
 const HomeSectionFive = () => {
     return (
@@ -13,40 +14,38 @@ const HomeSectionFive = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row gap-6 pt-12 bg-white mx-auto max-w-[80rem]">
-                <div className="bg-orange-200 rounded-2xl overflow-hidden shadow-md w-full lg:w-[45%] flex flex-col gap-28 justify-between">
-                    <Image
-                        src="/wallet.avif"
-                        alt="Wallet with card" width={200} height={200}
-                        className="w-full h-[20rem] object-cover rounded-lg"
-                    />
-                    <p className="text-[20px] font-semibold p-5">
+                <div className="bg-orange-200 h-[32rem] p-[24px] rounded-2xl overflow-hidden  w-full lg:w-[45%] flex flex-col gap-28 justify-between">
+                    
+                    <div>
+                    <MdOutlinePayment size={50}  className='bg-orange-600 p-4 rounded-full text-white'/>
+                    </div>
+                    <p className="text-[20px] font-semibold ">
                         Accept international payments with multi-currency support
                     </p>
                 </div>
 
                 {/* Middle: Text Content */}
-                <div className="bg-orange-200 rounded-2xl overflow-hidden shadow-md w-full lg:w-[25%] flex flex-col gap-28 justify-between">
-                    <Image
-                        src="/wallet.avif"
-                        alt="Wallet with card" width={200} height={200}
-                        className="w-full h-[20rem] object-cover rounded-lg"
-                    />
-                    <p className="text-[20px] font-semibold p-5">
+                <div className="bg-orange-200 h-[32rem] p-[24px] rounded-2xl overflow-hidden  w-full lg:w-[25%] flex flex-col gap-28 justify-between">
+                    <div>
+                    <MdCurrencyExchange size={50}  className='bg-orange-600 p-4 rounded-full text-white'/>
+                    </div>
+                    <p className="text-[20px] font-semibold ">
                         Apply real-time exchange rates                    </p>
                 </div>
 
-                {/* Right: Card Image */}
-                <div className="bg-white rounded-2xl overflow-hidden shadow-md w-full lg:w-[25%] flex flex-col gap-28 justify-between">
+                <div className="bg-[#faf7f2]  h-[32rem] rounded-2xl overflow-hidden w-full lg:w-[25%] flex flex-col justify-between">
                     <Image
                         src="/wallet.avif"
-                        alt="Wallet with card" width={200} height={200}
-                        className="w-full h-[20rem] object-cover rounded-lg"
+                        alt="Wallet with card"
+                        width={200}
+                        height={200}
+                        className="w-full h-[24rem] object-cover rounded-lg" 
                     />
-                    <p className="text-[20px] font-semibold p-5">
+                    <p className="text-[20px] font-semibold p-[24px]">
                         Accept international payments with multi-currency support
                     </p>
-
                 </div>
+
             </div>
         </section>
     )
